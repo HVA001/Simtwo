@@ -1,3 +1,34 @@
 @charset "utf-8";
 /* CSS Document */
+body{
+	margin: 0;
+	min-width: 800px;
+	max-width: 1280px;
+	background: var(--white);
+}
+header{ 
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--white);
+}
+nav ul{
+	margin: 0;
+	list-style: none;
+}
+nav li{
+	margin: 0 50px;
+	display: inline;
+}
+nav a{
+	padding: 5px 10px;
+	font-size: 18px;
+	color: var(--black);
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid var(--black);
+}
+
 
