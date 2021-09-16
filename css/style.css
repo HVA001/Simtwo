@@ -23,11 +23,12 @@ nav li{
 	display: inline;
 }
 nav a{
-	padding: 5px 10px;
 	font-size: 18px;
+	padding: 5px 5px;
 	color: var(--black);
 	display: inline-block;
 	text-decoration: none;
+	text-transform: uppercase;
 	border: 1px solid var(--black);
 }
 
