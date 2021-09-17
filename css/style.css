@@ -2,34 +2,74 @@
 /* CSS Document */
 body{
 	margin: 0;
+	padding: 0;
 	min-width: 800px;
-	max-width: 1280px;
+		max-width: 1280px;
+		min-height: 2000px;
 	background: var(--white);
 }
 header{ 
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: 100px;
-	display: flex;
-	align-items: center;
+	height: 100vh;
+	transition: 1s;
+	padding: 0 50px;
+	position: fixed;
+	box-sizing: border-box;
 	justify-content: center;
-	background: var(--white);
+	background: var(--black);
+}
+header.scrolled{
+	height: 150px;
+}
+header .banner{
+	background-color: brown;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	object-fit: cover;
+	position: absolute;
+}
+header .logo{
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transition: 1s;
+	font-size: 15vw;
+	font-weight: 700;
+	position: absolute;
+	color: var(--white);
+	text-decoration: none;
+	transform: translate(-50%,-50%);
+}
+nav{
+	float: right;
+	position: relative;
 }
 nav ul{
 	margin: 0;
-	list-style: none;
+	opacity: 0;
+	display: flex;
+	transition: 1s;
+	padding: 30px 0;
+	position: relative;
+	visibility: hidden;
+	transform: translateX(100px);
 }
 nav li{
-	margin: 0 50px;
-	display: inline;
+	list-style: none;
 }
 nav a{
-	font-size: 18px;
-	padding: 5px 5px;
-	color: var(--black);
+	padding: 10px 15px;
+	color: var(--white);
 	display: inline-block;
 	text-decoration: none;
-	text-transform: uppercase;
 	border: 1px solid var(--black);
 }
-
+nav a:hover{
+	color: var(--white);
+}
 
