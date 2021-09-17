@@ -1,0 +1,107 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/TemplateMain.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Simtwo</title>
+<!-- InstanceEndEditable -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/testcode.css">
+	<!-- InstanceBeginEditable name="style" -->
+	<link rel="stylesheet" href="js/vanilla-tilt.js">
+	<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<header>
+		<div class="banner"></div>
+		<a href="#" class="logo">Logo</a>
+		<nav>
+			<ul>
+				<li><a href="home.html">Trang chủ</a></li>
+				<li><a href="home.html">Diễn dàn</a></li>
+				<li><a href="home.html">Thư viện</a></li>
+				<li><a href="home.html">Website</a></li>
+				<li><a href="home.html">Liên hệ</a></li>
+			</ul>
+		</nav>
+	</header>
+	<middle><!-- InstanceBeginEditable name="WebBody" -->
+		<div class="glassmorphsim">
+			<h2>Glassmorphsim</h2>
+		</div>
+		<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+		<script type="text/javascript">
+			VanillaTilt.init(document.querySelectorAll(".glassmorphsim"), {
+				max: 20,
+				speed: 400,
+				glare: true,
+				"max-glare":0.5,
+			});
+		</script>
+		
+		
+		<div class="buttonBG">
+			<div class="btbg">
+				<h1>ButtonBG</h1>
+			</div>
+		</div>
+		
+		
+		<div class="buttonshiny">
+			<h1>ButtonS</h1>
+		</div>
+		
+		
+		<div class="buttonBA">
+			<h2>ButtonBA</h2>
+		</div>
+		
+		
+		<div class="buttonGA">
+			<h3>ButtonGA</h3>
+		</div>
+		
+		
+		<div class="buttonHE">
+			<h3>ButtonHE</h3>
+		</div>
+		
+		
+		<div class="circle">
+			<div class="img"></div>
+			<div class="text">
+				<p>MỘT VÒNG TRÒN NGU DỐT</p>
+			</div>
+		</div>
+		<script>
+			const text = document.querySelector('.text');
+			text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+			const element = document.querySelectorAll('span');
+			for(let i = 0; i<element.length; i++){
+				element[i].style.transform = "rotate("+i*21+"deg)"
+			}
+		</script>
+		
+		
+		<div class="layer">
+			<h1 style="--i:2;--j:0">Layer</h1>
+			<h1 style="--i:1;--j:1">Layer</h1>
+			<h1 style="--i:0;--j:2">Layer</h1>
+			<h1 style="--i:-1;--j:3">Layer</h1>
+			<h1 style="--i:-2;--j:4">Layer</h1>
+		</div>
+	<!-- InstanceEndEditable --></middle>
+	<footer>
+	
+	
+	</footer>
+	<script>
+		window.addEventListener("scroll",function(){
+			const header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		})
+	</script>
+</body>
+<!-- InstanceEnd --></html>
