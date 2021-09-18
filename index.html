@@ -15,24 +15,11 @@
 </head>
 
 <body>
-	<header>
-		<div class="banner"></div>
-		<div class="container">
-			<a href="#" class="logo">Logo</a>
-			<nav>
-				<ul>
-					<li><a href="home.html">Trang chủ</a></li>
-					<li><a href="#">Diễn dàn</a></li>
-					<li><a href="#">Thư viện</a></li>
-					<li><a href="#">Website</a></li>
-					<li><a href="#">Liên hệ</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<middle class="container"><!-- InstanceBeginEditable name="WebBody" -->
-		<div class="glassmorphsim">
-			<h2>Glassmorphsim</h2>
+	<middle class="container grid py-5"><!-- InstanceBeginEditable name="WebBody" -->
+		<div class="box col-4">
+			<div class="glassmorphsim">
+				<h2>Glassmorphsim</h2>
+			</div>
 		</div>
 		<script type="text/javascript" src="js/vanilla-tilt.js"></script>
 		<script type="text/javascript">
@@ -45,35 +32,47 @@
 		</script>
 		
 		
-		<div class="buttonBG">
-			<h1>ButtonBG</h1>
+		<div class="box col-4">
+			<div class="buttonBG">
+				<h1>ButtonBG</h1>
+			</div>
 		</div>
 		
 		
-		<div class="buttonshiny">
-			<h1>ButtonS</h1>
+		<div class="box col-4">
+			<div class="buttonshiny">
+				<h1>ButtonS</h1>
+			</div>
 		</div>
 		
 		
-		<div class="buttonBA">
-			<h2>ButtonBA</h2>
+		<div class="box col-4">
+			<div class="buttonBA">
+				<h2>ButtonBA</h2>
+			</div>
 		</div>
 		
 		
-		<div class="buttonGA">
-			<h3>ButtonGA</h3>
+		<div class="box col-4">
+			<div class="buttonGA">
+				<h3>ButtonGA</h3>
+			</div>
 		</div>
 		
 		
-		<div class="buttonHE">
-			<h3>ButtonHE</h3>
+		<div class="box col-4">
+			<div class="buttonHE">
+				<h3>ButtonHE</h3>
+			</div>
 		</div>
 		
 		
-		<div class="circle">
-			<div class="img"></div>
-			<div class="text">
-				<p>MỘT VÒNG TRÒN NGU DỐT</p>
+		<div class="box col-4">
+			<div class="circle">
+				<div class="img"></div>
+				<div class="text">
+					<p>MỘT VÒNG TRÒN NGU DỐT</p>
+				</div>
 			</div>
 		</div>
 		<script>
@@ -86,32 +85,53 @@
 		</script>
 		
 		
-		<div class="layer">
-			<h1 style="--i:2;--j:0">Layer</h1>
-			<h1 style="--i:1;--j:1">Layer</h1>
-			<h1 style="--i:0;--j:2">Layer</h1>
-			<h1 style="--i:-1;--j:3">Layer</h1>
-			<h1 style="--i:-2;--j:4">Layer</h1>
+		<div class="box col-4">
+			<div class="layer">
+				<h1 style="--i:2;--j:0">Layer</h1>
+				<h1 style="--i:1;--j:1">Layer</h1>
+				<h1 style="--i:0;--j:2">Layer</h1>
+				<h1 style="--i:-1;--j:3">Layer</h1>
+				<h1 style="--i:-2;--j:4">Layer</h1>
+			</div>
 		</div>
 		
 		
-		<div class="loader">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<h3>Loading...</h3>
+		<div class="box col-4">
+			<div class="loader">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<h3>Loading...</h3>
+			</div>
 		</div>
 		
 		
-		<div class="card">
-			<div class="img"></div>
+		<div class="box col-4">
+			<div class="card">
+				<div class="img"></div>
+			</div>
 		</div>
 	<!-- InstanceEndEditable --></middle>
 	<footer>
 	
 	
 	</footer>
+	<header>
+		<div class="banner"></div>
+		<div class="container">
+			<a href="#" class="logo px-2">Logo</a>
+			<nav>
+				<ul class="px-2">
+					<li class="px-1"><a href="home.html">Trang chủ</a></li>
+					<li class="px-1"><a href="#">Diễn dàn</a></li>
+					<li class="px-1"><a href="#">Thư viện</a></li>
+					<li class="px-1"><a href="#">Website</a></li>
+					<li class="px-1"><a href="#">Liên hệ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<script>
 		window.addEventListener("scroll",function(){
 			const header = document.querySelector('header');

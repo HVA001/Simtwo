@@ -1,21 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
+header{z-index: 10;}
 middle{
-	display: flex;
-	flex-wrap: wrap;
-	grid-template-columns: 25% 25% 25% 25%;
-	grid-template-rows: 200px;
-	justify-content: center;
-	align-items: center;
+	grid-row-gap: 100px;
 }
-
-
-
+.box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .glassmorphsim{
-	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 20px;
+	width: 80%;
+	height: 400px;
 	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
 	border-radius: 15px;
 	background: rgba(255,255,255,0.1);
@@ -29,6 +27,7 @@ middle{
 	perspective: 500px;
 }
 .glassmorphsim:hover h2{
+	color: #fff;
 	transform: scale(1.25) translateZ(10px);
 }
 .js-tilt-glare{
@@ -40,22 +39,21 @@ middle{
 .buttonBG{
 	background: #020024;
 	background: linear-gradient(155deg,#020024 0%,red 0%,#ffab00 12%,#e0ff00 24%,#00ff08 36%,#00e4ff 48%,#0005ff 60%,#fe00e7 72%,red 84%,#ffa200 96%);
-	width: 230px;
-	height: 80px;
+	width: 60%;
+	height: 70px;
 	position: relative;
-	animation: BBG 55s linear infinite;
+	animation: BBG 60s linear infinite;
 }
 .buttonBG::before{
 	content: '';
-	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 100%;
 	height: 100%;
-	background: inherit;
 	position: absolute;
-	filter: blur(8px);
+	background: inherit;
+	filter: blur(20px);
 }
 .buttonBG h1{
 	position: absolute;
@@ -64,12 +62,10 @@ middle{
 	transform: translate(-50%,-50%);
 	background-color: #ffffff;
 	background-image: linear-gradient(147deg,#ffffff 0%,rgba(179,179,179,1.00));
-	width: 200px;
-	height: 50px;
+	width: 98%;
+	height: 95%;
 	text-align: center;
-	line-height: 40px;
-	text-decoration: none;
-	padding: 10px;
+	line-height: 70px;
 	color: #000;
 	letter-spacing: 4px;
 }
@@ -89,13 +85,13 @@ middle{
 
 .buttonshiny{
 	text-align: center;
-	width: 150px;
-	height: 50px;
+	width: 60%;
+	height: 70px;
 	position: relative;
-	padding: 20px;
-	margin: 20px;
 	background: #27022d;
 	color: #fff;
+	line-height: 70px;
+	padding: 5px 20px;
 	letter-spacing: 1px;
 	border: 1px solid #000;
 	transition: 0.5s;
@@ -121,11 +117,10 @@ middle{
 
 
 .buttonBA{
-	margin: 20px;
 	position: relative;
-	width: 200px;
-	height: 50px;
-	line-height: 48px;
+	width: 60%;
+	height: 70px;
+	line-height: 70px;
 	background: #000;
 	letter-spacing: 4px;
 	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
@@ -196,17 +191,16 @@ middle{
 
 
 .buttonGA{
-	margin: 20px;
 	position: relative;
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
+	width: 60%;
+	height: 70px;
+	line-height: 70px;
 	text-align: center;
 	color: #fff;
 	box-sizing: border-box;
 	background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 	background-size: 400%;
-	border-radius: 30px;
+	border-radius: 40px;
 	z-index: 1;
 }
 .buttonGA:hover{
@@ -219,14 +213,14 @@ middle{
 .buttonGA:before{
 	content: '';
 	position: absolute;
-	top: -5px;
-	left: -5px;
-	right: -5px;
-	bottom: -5px;
-	z-index: -1;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	z-index: -2;
 	background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 	background-size: 400%;
-	border-radius: 40px;
+	border-radius: 50px;
 	opacity: 0;
 	transition: 0.5s;
 }
@@ -240,11 +234,10 @@ middle{
 .buttonHE{
 	position: relative;
 	text-align: center;
-	line-height: 50px;
-	width: 200px;
-	height: 50px;
+	line-height: 70px;
+	width: 60%;
+	height: 70px;
 	background: #fff;
-	margin: 20px;
 }
 .buttonHE:before,
 .buttonHE:after{
@@ -252,7 +245,7 @@ middle{
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(45deg,#00ccff,#0e1538,#0e1538,#d400d4);
-	transition: 0.5s
+	transition: 0.5s;
 }
 .buttonHE:hover:before{
 	inset: -3px;
@@ -262,7 +255,6 @@ middle{
 	filter: blur(10px);
 }
 .buttonHE h3{
-	margin: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -270,9 +262,9 @@ middle{
 	height: 100%;
 	display: inline-block;
 	background: #0e1538;
-	z-index: 10;
 	letter-spacing: 2px;
 	color: #fff;
+	z-index: 1;
 	border-radius: 1px solid #040a29;
 	overflow: hidden;
 }
@@ -308,6 +300,7 @@ middle{
 	filter: brightness(1.5) contrast(1.5);
 }
 .text{
+	color: #fff;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -334,6 +327,7 @@ middle{
 	perspective: 1000px;
 }
 .layer h1{
+	color: #fff;
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -361,7 +355,6 @@ middle{
 	width: 200px;
 	height: 200px;
 	background: #1a1aff;
-	margin: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -451,8 +444,8 @@ middle{
 
 .card{
 	position: relative;
-	width: 200px;
-	height: 300px;
+	width: 80%;
+	height: 400px;
 	background: #fff;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,0.1);
@@ -472,5 +465,5 @@ middle{
 	transition: 1s
 }
 .card:hover .img{
-	transform: translateY(30px) scale(0.5);
+	transform: translateY(40px) scale(0.75, 0.5);
 }

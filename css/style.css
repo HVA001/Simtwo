@@ -11,14 +11,7 @@ body{
 	display: flex;
 	min-height: 1000px;
 	justify-content: center;
-	background: var(--white);
-}
-.s{padding-top: 140px;}
-.grid-container > div {
-  width: 100%;
-  background-color: rgba(255, 0,0, 0.8);
-  text-align: center;
-  font-size: 30px;
+	background: var(--black);
 }
 header{ 
 	top: 0;
@@ -53,8 +46,7 @@ header .logo{
 	z-index: 1;
 	transition: 1s;
 	font-size: 15vw;
-	padding: 0 50px;
-	font-weight: 700;
+	font-weight: 700px	;
 	position: absolute;
 	color: var(--white);
 	text-decoration: none;
@@ -71,11 +63,9 @@ header nav{
 	position: relative;
 }
 header nav ul{
-	margin: 0;
 	opacity: 0;
 	display: flex;
 	transition: 1s;
-	padding: 10px 0;
 	position: relative;
 	transform: translateX(100px);
 }
@@ -87,13 +77,22 @@ header.sticky nav ul{
 header nav li{
 	list-style: none;
 }
-header nav a{
-	padding: 5px 15px;
+header nav li a{
+	line-height: 50px;
+	position: relative;
 	color: var(--white);
 	display: inline-block;
 	text-decoration: none;
 }
-header nav a:hover{
-	color: var(--white);
+header nav li a::before{
+	top: 90%;
+	width: 0px;
+	height: 5px;
+	content: '';
+	transition: 0.5s;
+	position: absolute;
+	background-color: var(--white);
 }
-
+header nav li:hover a::before{
+	width: 100%;
+}

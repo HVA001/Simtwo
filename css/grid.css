@@ -1,11 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 :root{
-	--space1: 0.25rem;
-	--space2: 0.5rem;
-	--space3: 1rem;
-	--space4: 1.5rem;
-	--space5: 3rem;
+	--space1: 10px;
+	--space2: 25px;
+	--space3: 50px;
+	--space4: 75px;
+	--space5: 150px;
 }
 .container{width: 100%;}
 @media (min-width: 576px){.container{max-width: 540px;}}
@@ -13,38 +13,42 @@
 @media (min-width: 992px){.container{max-width: 960px;}}
 @media (min-width: 1200px){.container{max-width: 1140px;}}
 @media (min-width: 1400px){.container{max-width: 1320px;}}
+.hidden{overflow: hidden;}
 .wrap{
 	display: flex;
 	flex-wrap: wrap;
 }
 .grid{
 	display: grid;
-	overflow: hidden;
-	justify-content: space-between;
 	grid-auto-rows: minmax(min-content, max-content);
 }
 @media (min-width: 576px){
 	.grid{
+		grid-column-gap: 12px;
 		grid-template-columns: 34px 34px 34px 34px 34px 34px 34px 34px 34px 34px 34px 34px;
 	}
 }
 @media (min-width: 768px){
 	.grid{
+		grid-column-gap: 24px;
 		grid-template-columns: 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
 	}
 }
 @media (min-width: 992px){
 	.grid{
+		grid-column-gap: 24px;
 		grid-template-columns: 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px 58px;
 	}
 }
 @media (min-width: 1200px){
 	.grid{
+		grid-column-gap: 36px;
 		grid-template-columns: 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px 62px;
 	}
 }
 @media (min-width: 1400px){
 	.grid{
+		grid-column-gap: 36px;
 		grid-template-columns: 77px 77px 77px 77px 77px 77px 77px 77px 77px 77px 77px 77px;
 	}
 }
