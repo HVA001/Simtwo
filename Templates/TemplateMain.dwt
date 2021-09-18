@@ -5,6 +5,7 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>Simtwo</title>
 <!-- TemplateEndEditable -->
+	<link rel="stylesheet" href="../css/grid.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/color.css">
 	<link rel="stylesheet" href="../css/testcode.css">
@@ -16,18 +17,20 @@
 <body>
 	<header>
 		<div class="banner"></div>
-		<a href="#" class="logo">Logo</a>
-		<nav>
-			<ul>
-				<li><a href="../home.html">Trang chủ</a></li>
-				<li><a href="../home.html">Diễn dàn</a></li>
-				<li><a href="../home.html">Thư viện</a></li>
-				<li><a href="../home.html">Website</a></li>
-				<li><a href="../home.html">Liên hệ</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<a href="#" class="logo">Logo</a>
+			<nav>
+				<ul>
+					<li><a href="../home.html">Trang chủ</a></li>
+					<li><a href="#">Diễn dàn</a></li>
+					<li><a href="#">Thư viện</a></li>
+					<li><a href="#">Website</a></li>
+					<li><a href="#">Liên hệ</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<middle><!-- TemplateBeginEditable name="WebBody" -->
+	<middle class="container"><!-- TemplateBeginEditable name="WebBody" -->
 	
 	<!-- TemplateEndEditable --></middle>
 	<footer>
