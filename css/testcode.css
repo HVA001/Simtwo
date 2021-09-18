@@ -42,7 +42,6 @@ middle{
 	background: linear-gradient(155deg,#020024 0%,red 0%,#ffab00 12%,#e0ff00 24%,#00ff08 36%,#00e4ff 48%,#0005ff 60%,#fe00e7 72%,red 84%,#ffa200 96%);
 	width: 230px;
 	height: 80px;
-	margin: 20px;
 	position: relative;
 	animation: BBG 55s linear infinite;
 }
@@ -58,7 +57,7 @@ middle{
 	position: absolute;
 	filter: blur(8px);
 }
-.buttonBG .btbg{
+.buttonBG h1{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -68,8 +67,9 @@ middle{
 	width: 200px;
 	height: 50px;
 	text-align: center;
+	line-height: 40px;
 	text-decoration: none;
-	padding: 0 10px 20px;
+	padding: 10px;
 	color: #000;
 	letter-spacing: 4px;
 }
@@ -92,7 +92,7 @@ middle{
 	width: 150px;
 	height: 50px;
 	position: relative;
-	padding: 0 20px 30px;
+	padding: 20px;
 	margin: 20px;
 	background: #27022d;
 	color: #fff;
@@ -200,8 +200,8 @@ middle{
 	position: relative;
 	width: 200px;
 	height: 60px;
+	line-height: 60px;
 	text-align: center;
-	line-height: 25px;
 	color: #fff;
 	box-sizing: border-box;
 	background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
@@ -330,8 +330,8 @@ middle{
 	position: relative;
 	width: 200px;
 	height: 200px;
-/*	transform-style: preserve-3d;*/
-/*	perspective: 1000px;*/
+	transform-style: preserve-3d;
+	perspective: 1000px;
 }
 .layer h1{
 	position: absolute;
@@ -352,4 +352,125 @@ middle{
 .layer:hover h1{
 	transform: rotate(-30deg) skew(25deg) translateX(calc(35px * var(--i))) translateY(calc(-35px * var(--i)));
 	box-shadow: -20px 20px 20px rgba(0,0,0,0.25);
+}
+
+
+
+.loader{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #1a1aff;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	color: #fff;
+	overflow: hidden;
+}
+.loader:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+.loader span{
+	position: absolute;
+	display: block;
+}
+.loader span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: loader1 2s linear infinite;
+	animation-delay: 0s;
+}
+@keyframes loader1{
+	0%{left:-100%;}
+	50%,100%{left: 100%;}
+}
+.loader span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #03e9f4);
+	animation: loader2 2s linear infinite;
+	animation-delay: 0.5s;
+}
+@keyframes loader2{
+	0%{top:-100%;}
+	50%,100%{top: 100%;}
+}
+.loader span:nth-child(3){
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 5px;
+	background: linear-gradient(270deg, transparent, #03e9f4);
+	animation: loader3 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes loader3{
+	0%{right:-100%;}
+	50%,100%{right: 100%;}
+}
+.loader span:nth-child(4){
+	bottom: -100%;
+	left: 0;
+	width: 5px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #03e9f4);
+	animation: loader4 2s linear infinite;
+	animation-delay: 1.5s;
+}
+@keyframes loader4{
+	0%{bottom:-100%;}
+	50%,100%{bottom: 100%;}
+}
+.loader h3{
+	color: #03e9f4;
+	overflow: hidden;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	border-right: 1px solid #03e9f4;
+	animation: typing 5s steps(10) infinite;
+}
+.loader:hover h3{
+	color: #111;
+	border-right: 1px solid #111;
+}
+@keyframes typing{
+	0%,90%,100%{width: 0px;}
+	30%,60%{width: 101.59px}
+}
+
+
+
+.card{
+	position: relative;
+	width: 200px;
+	height: 300px;
+	background: #fff;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.1);
+	border-top: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(15px);
+	box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+.card .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	transform-origin: top;
+	transition: 1s
+}
+.card:hover .img{
+	transform: translateY(30px) scale(0.5);
 }
