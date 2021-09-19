@@ -6,16 +6,17 @@
 <title>Simtwo</title>
 <!-- InstanceEndEditable -->
 	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/color.css">
-	<link rel="stylesheet" href="css/testcode.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header-scroll.css">
 	<!-- InstanceBeginEditable name="style" -->
+	<link rel="stylesheet" href="css/testcode.css">
 	<link rel="stylesheet" href="js/vanilla-tilt.js">
 	<!-- InstanceEndEditable -->
 </head>
 
 <body>
-	<middle class="container grid py-3"><!-- InstanceBeginEditable name="WebBody" -->
+	<main class="container grid py-3"><!-- InstanceBeginEditable name="main" -->
 		<div class="box col-4">
 			<div class="glassmorphsim">
 				<h2>Glassmorphsim</h2>
@@ -112,15 +113,13 @@
 				<div class="img"></div>
 			</div>
 		</div>
-	<!-- InstanceEndEditable --></middle>
-	<footer>
-	
-	
-	</footer>
+	<!-- InstanceEndEditable --></main>
+	<!-- InstanceBeginEditable name="sticky" -->
 	<header>
+	<!-- InstanceEndEditable -->
 		<div class="banner"></div>
 		<div class="container">
-			<a href="#" class="logo px-2">Logo</a>
+			<a href="#" class="logo px-2" onClick="nonsticky()">Logo</a>
 			<nav>
 				<ul class="px-2">
 					<li class="px-1"><a href="home.html">Trang chủ</a></li>
@@ -132,11 +131,15 @@
 			</nav>
 		</div>
 	</header>
+	<footer>
+		
+	</footer>
 	<script>
 		window.addEventListener("scroll",function(){
-			const header = document.querySelector('header');
+			var header = document.querySelector('header');
 			header.classList.toggle('sticky', window.scrollY >= 0);
-		})
+		});
+		function nonsticky() {document.querySelector('header').classList.toggle('sticky');};
 	</script>
 </body>
 <!-- InstanceEnd --></html>
