@@ -66,9 +66,9 @@ header nav li a{
 	text-decoration: none;
 }
 header nav li a::before{
+	bottom: 0;
 	width: 0px;
 	height: 5px;
-	bottom: 90%;
 	content: '';
 	transition: 0.5s;
 	position: absolute;
