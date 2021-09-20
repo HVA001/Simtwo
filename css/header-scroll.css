@@ -59,14 +59,14 @@ header.sticky nav ul{
 }
 header nav li{list-style: none;}
 header nav li a{
-	line-height: 50px;
+	line-height: 60px;
 	position: relative;
 	color: var(--white);
 	display: inline-block;
 	text-decoration: none;
 }
 header nav li a::before{
-	bottom: 0;
+	top: 0;
 	width: 0px;
 	height: 5px;
 	content: '';
