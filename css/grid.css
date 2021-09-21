@@ -25,8 +25,8 @@
 }
 @media (min-width: 576px){
 	.grid{
-		grid-column-gap: 30px;
-		grid-template-columns: 65px 65px 65px 65px 65px 65px;
+		grid-column-gap: 52px;
+		grid-template-columns: 101px 101px 101px 101px;
 	}
 }
 @media (min-width: 768px){
@@ -37,8 +37,8 @@
 }
 @media (min-width: 992px){
 	.grid{
-		grid-column-gap: 40px;
-		grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+		grid-column-gap: 44px;
+		grid-template-columns: 85px 85px 85px 85px 85px 85px 85px 85px;
 	}
 }
 @media (min-width: 1200px){
