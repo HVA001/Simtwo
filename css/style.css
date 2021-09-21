@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+p{font-family: "Abril Fatface";}
+h1,h2,h3,h4,h5{font-family: "Cambria";}
+.banner{
+	width: 100%;
+	height: 800px;
+	background: #393939;
+}
+.content p{
+	font-size: 48px;
+}
+.produ{
+	height: 300px;
+	background: #6C6C6C;
+}
+button{
+	background: #6c6c6c;
+	height: 50px;
+	width: 150px;
+}
+.list{
+	width: 100%;
+	height: 300px;
+	background: #6C6C6C;
+}
+.proto{
+	height: 400px;
+}
+.prochild{
+	background: #6C6C6C;
+}
+footer{
+	height: 250px;
+	background: #000;
+}
