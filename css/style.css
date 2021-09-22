@@ -2,11 +2,28 @@
 /* CSS Document */
 p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5{font-family: "Cambria";}
-.banner{
+
+html,body{
+	position: relative;
+	height: 100%;
+}
+.bannerswiper{
+	overflow: hidden;
 	width: 100%;
 	height: 800px;
-	background: #393939;
 }
+.bannerswiper-slide{
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+.bannerswiper-slide img{
+	width: 100%;
+	height: 800px;
+}
+
+
 .content p{
 	font-size: 48px;
 }
