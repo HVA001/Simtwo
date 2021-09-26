@@ -8,6 +8,7 @@ html,body{
 	height: 100%;
 }
 header{
+	top: 0;
 	z-index: 10;
 	width: 100%;
 	position: fixed;
@@ -17,26 +18,34 @@ nav{
 	background-position: center;
 	background-size: cover;
 }
+footer{
+	height: 250px;
+	background-image: url("../img/H-1.png");
+	background-position: center;
+	background-size: cover;
+}
+footer p{
+	font-size: 20px;
+}
 .ban-l,.ban-r{
 	position: relative;
 	width: 100%;
 	height: 150px;
 }
 .ban-l{
-	transform: translate(-20%, 550%);
+	transform: translateY(550%);
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
-	transform: translateY(20%);
 	animation: lim-down 2s linear infinite alternate;
 }
 @keyframes lim-up{
-	0%{transform: translate(-20%, 550%) rotate(-10deg);}
-	100%{transform: translate(-20%, 550%) rotate(10deg);}
+	0%{transform: translateY(550%) rotate(-10deg) scale(2);}
+	100%{transform: translateY(550%) rotate(10deg) scale(2);}
 }
 @keyframes lim-down{
-	0%{transform: translateY(20%) rotate(-10deg);}
-	100%{transform: translateY(20%) rotate(10deg);}
+	0%{transform: rotate(-10deg) scale(2);}
+	100%{transform: rotate(10deg) scale(2);}
 }
 .ban-bh{
 	background-image: url("../img/Bann-4.png");
@@ -63,14 +72,45 @@ nav{
 }
 .ban-btl{
 	position: relative;
-	transform: translate(50%,);
+	transform: translate(50%);
 }
 .ban-btr{
 	position: relative;
-	transform: translate(-50%,);
+	transform: translate(-50%);
+}
+.ban-btc{
+	position: relative;
+	transform: translateY(50%);
+}
+.content-bg-1{
+	background: url("../img/B-4.png");
+	background-position: center;
+	background-size: cover;
+}
+.content-bg-2{
+	background: url("../img/B-5.png");
+	background-position: center;
+	background-size: cover;
+}
+.content-bg-3{
+	background: url("../img/B-6.png");
+	background-position: center;
+	background-size: cover;
+}
+.content-bg-4{
+	background: url("../img/B-7.png");
+	background-position: center;
+	background-size: cover;
 }
 .content{
+	z-index: 1;
 	font-size: 48px;
+	background: url("../img/B-3.png") no-repeat center;
+	background-size: auto;
+}
+.rotate{
+	position: relative;
+	transform: rotate(180deg);
 }
 .produ p{
 	font-size: 36px; 
@@ -80,12 +120,19 @@ nav{
 	font-size: 20px; 
 	transform: translateY(-150px);
 }
-.produ img{
+.produ .d-flex img{
 	position: relative;
-	transform: translateX(50px);
+	transform: translateX(-15%);
+}
+.produ .info p{
+	font-size: 24px;
 }
 .produ button{
 	transform: translateY(-50px);
+}
+.d-grid{
+	grid-gap: 50px 50px;
+	grid-template-columns: auto auto auto auto;
 }
 .gridswiper{
 	width: 100%;
@@ -115,7 +162,7 @@ nav{
 	align-items: center;
 }
 .grid-pd{
-	width: 80%;
+	width: 100%;
 	background: url("../img/B-1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -129,9 +176,15 @@ nav{
 .grid-pd-2 img{
 	height: 100%;
 	width: 100%;
+	bottom: 0;
 }
 .grid-pd-2 a{
 	text-decoration: none;
+}
+.n-bg{
+	background-image: url("../img/S-6.png");
+	background-position: center;
+	background-size: cover;
 }
 .wrap-pd{
 	height: 300px;
@@ -153,9 +206,12 @@ nav{
 }
 .wrap-pd-2{
 	height: 100%;
-	background: #C9C9C9;
+	background: #E1E1E1;
 	opacity: 0;
 	transition: 1s;
+}
+.wrap-pd-2 p{
+	font-size: 48px;
 }
 .wrap-pd-2:hover{
 	opacity: 0.75;
@@ -176,11 +232,5 @@ nav{
 	transform: translateX(-135%)scale(0.5);
 	border-radius: 10%;
 	background: rgba(255,255,255,0.25);
-	opacity: 0.75;}
-footer{
-	height: 250px;
-	background: rgba(192,192,192,1.00);
-}
-footer p{
-	font-size: 20px;
+	opacity: 0.75;
 }
