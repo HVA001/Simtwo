@@ -7403,7 +7403,8 @@ textarea.form-control-lg {
 }
 
 .bg-secondary {
-  background-color: #844f40 !important;
+  background: url("../img/S-7.png") center !important;
+  background-size: cover;
 }
 
 .bg-success {
