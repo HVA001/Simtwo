@@ -7405,6 +7405,7 @@ textarea.form-control-lg {
 .bg-secondary {
   background: url("../img/S-7.png") center !important;
   background-size: cover;
+  background-position:fixed;
 }
 
 .bg-success {
