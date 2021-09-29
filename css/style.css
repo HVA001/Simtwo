@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 ::-webkit-scrollbar{display: none;}
-p,b{font-family: "Abril Fatface";}
+p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5{font-family: "Cambria";}
 html,body{
 	height: 100%;
@@ -28,27 +28,27 @@ footer p{font-size: 20px;}
 .banner{height: 600px;}
 .banner-2{
 	transform: translateY(75%);
-	height: 100px;
+	height: 150px;
 }
 .banner-2 p{position: absolute;}
 .ban-l,.ban-r{
 	position: relative;
 }
 .ban-l{
-	transform: translate(-15%, 250%);
+	transform: translate(-15%, 225%);
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
-	transform:  translate(15%, 25%);
+	transform:  translate(15%, 50%);
 	animation: lim-down 2s linear infinite alternate;
 }
 @keyframes lim-up{
-	0%{transform: translate(-15%, 250%) rotate(-10deg)}
-	100%{transform: translate(-15%, 250%) rotate(10deg)}
+	0%{transform: translate(-15%, 225%) rotate(-10deg)}
+	100%{transform: translate(-15%, 225%) rotate(10deg)}
 }
 @keyframes lim-down{
-	0%{transform: translate(15%, 25%) rotate(-10deg)}
-	100%{transform: translate(15%, 25%) rotate(10deg)}
+	0%{transform: translate(15%, 50%) rotate(-10deg)}
+	100%{transform: translate(15%, 50%) rotate(10deg)}
 }
 .ban-bh{
 	height: 900px;
@@ -122,7 +122,7 @@ footer p{font-size: 20px;}
 	font-size: 36px; 
 }
 .produ h5{
-	color: #683B31;
+	color: #4E4E4E;
 	font-size: 20px; 
 }
 /*
@@ -276,7 +276,7 @@ footer p{font-size: 20px;}
 	font-family: "Cambria";
 }
 .scale-pd:hover .scale-pd-2{
-	opacity: 0.75;
+	opacity: 0;
 	border-radius: 10%;
 	transform: translateX(-135%)scale(0.5);
 }
