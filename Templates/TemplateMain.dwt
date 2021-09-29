@@ -94,10 +94,10 @@
 			let value = window.scrollY;
 			left.style.right = value/3 + 'px';
 			right.style.left = value/3 + 'px';
-			main.style.top = value*1.5 + 'px';
+			main.style.top = value*2.5 + 'px';
 			content.style.top= value*0.25 + 'px';
-			btl.style.right = value/6 + 'px';
-			btr.style.left = value/6 + 'px';
+			btl.style.right = value/4 + 'px';
+			btr.style.left = value/4 + 'px';
 		})
 	</script>
 </body>
