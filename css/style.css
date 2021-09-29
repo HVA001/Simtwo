@@ -43,12 +43,12 @@ footer p{font-size: 20px;}
 	animation: lim-down 2s linear infinite alternate;
 }
 @keyframes lim-up{
-	0%{transform: translate(-15%, 225%) rotate(-10deg)}
-	100%{transform: translate(-15%, 225%) rotate(10deg)}
+	0%{transform: translate(-15%, 225%) rotate(-10deg);}
+	100%{transform: translate(-15%, 225%) rotate(10deg);}
 }
 @keyframes lim-down{
-	0%{transform: translate(15%, 50%) rotate(-10deg)}
-	100%{transform: translate(15%, 50%) rotate(10deg)}
+	0%{transform: translate(15%, 50%) rotate(-10deg);}
+	100%{transform: translate(15%, 50%) rotate(10deg);}
 }
 .ban-bh{
 	height: 900px;
@@ -56,6 +56,24 @@ footer p{font-size: 20px;}
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("../img/Bann-4.png");
+}
+@media (max-width: 768px){
+	.banner-2{
+		transform: translateY(75%);
+		height: 100px;
+	}
+}
+@media (max-width: 1024px){
+	.banner-2{
+		transform: translateY(90%);
+		height: 100px;
+	}
+}
+@media (min-width: 1025px){
+	.banner-2{
+		transform: translateY(100%);
+		height: 150px;
+	}
 }
 .ban-main{
 	width: 125%;
