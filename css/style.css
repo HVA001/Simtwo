@@ -27,7 +27,7 @@ footer{
 footer p{font-size: 20px;}
 .banner{height: 600px;}
 .banner-2{
-	transform: translateY(75%);
+	transform: translateY(100%);
 	height: 150px;
 }
 .banner-2 p{position: absolute;}
@@ -107,6 +107,11 @@ footer p{font-size: 20px;}
 	background-size: auto;
 	background: url("../img/B-3.png") no-repeat center;
 }
+.fw{
+	left: 0vw;
+	position: absolute;
+	transform: translateY(-75%);
+}
 .content-bg-1{
 	background-size: cover;
 	background-position: center;
@@ -149,7 +154,7 @@ footer p{font-size: 20px;}
 	transform: translateX(-15%);
 }
 */
-.produ .aside{min-width: 550px;}
+.produ .aside{min-width: 500px;}
 .produ .aside-info p{
 	position: absolute;
 	transform: translate(-75%,75%);
