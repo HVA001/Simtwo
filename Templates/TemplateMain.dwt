@@ -42,29 +42,29 @@
 	
 	<!-- TemplateEndEditable -->
 	<footer>
-		<div class="container d-flex pt-3">
-			<div class="col-4 ms-5">
-				<img class="mt-3 mb-4" src="../img/Logo.png">
-				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare sem.</h4>
+		<div class="container d-flex justify-content-between align-content-between py-3">
+			<div class="wrap-line">
+				<a href="#"><img class="pt-2 pb-3" src="../img/Logo.png"></a>
+				<h6 class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare sem.</h6>
 			</div>
-			<div class="col-2 ms-5">
-				<p class="my-3"><b>INFOMATION</b></p>
-				<h5 class="my-3">About Us</h5>
-				<h5 class="my-3">More Search</h5>
-				<h5 class="my-3">Blog</h5>
-				<h5 class="my-3">Event</h5>
+			<div class="wrap-line">
+				<p class="pt-1 mt-3 mb-0"><b>INFOMATION</b></p>
+				<a href="#"><h6 class="py-1">About Us</h6></a>
+				<a href="#"><h6 class="py-1">More Search</h6></a>
+				<a href="#"><h6 class="py-1">Blog</h6></a>
+				<a href="#"><h6 class="py-1">Event</h6></a>
 			</div>
-			<div class="col-2 ms-5">
-				<p class="my-3"><b>OUR SERVICES</b></p>
-				<h5 class="my-3">Brand List</h5>
-				<h5 class="my-3">Cocktail</h5>
-				<h5 class="my-3">New Style</h5>
-				<h5 class="my-3">Classic</h5>
+			<div class="wrap-line">
+				<p class="pt-1 mt-3 mb-0"><b>OUR SERVICES</b></p>
+				<a href="#"><h6 class="py-1">Brand List</h6></a>
+				<a href="#"><h6 class="py-1">Cocktail</h6></a>
+				<a href="#"><h6 class="py-1">New Style</h6></a>
+				<a href="#"><h6 class="py-1">Classic</h6></a>
 			</div>
-			<div class="col-4">
-				<p class="my-3"><b>CONTACT US</b></p>
-				<h5 class="my-3">0909299299</h5>
-				<h5 class="my-3">Mixoloxy</h5>
+			<div class="wrap-line">
+				<p class="pt-1 mt-3 mb-0"><b>CONTACT US</b></p>
+				<a href="#"><h6 class="py-1">0909299299</h6></a>
+				<a href="#"><h6 class="py-1">Mixoloxy</h6></a>
 			</div>
 		</div>
 	</footer>
@@ -83,16 +83,12 @@
 		});
 	</script>
 	<script>
-		let left = document.getElementById("ban-l");
-		let right = document.getElementById("ban-r");
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
 		let btl = document.getElementById("ban-btl");
 		let btr = document.getElementById("ban-btr");
 		window.addEventListener("scroll",function(){
 			let value = window.scrollY;
-			left.style.left = -value/3 + 'px';
-			right.style.right = -value/3 + 'px';
 			main.style.top = value*2.5 + 'px';
 			content.style.top= value*0.25 + 'px';
 			btl.style.right = value/4 + 'px';

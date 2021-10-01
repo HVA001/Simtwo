@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 *{scroll-behavior: smooth;}
-::-webkit-scrollbar{display: none;overflow: hidden}
+::-webkit-scrollbar{display: none;}
 p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html,body{
@@ -14,104 +14,107 @@ nav{
 	background-image: url("../img/H-1.png");
 }
 footer{
-	height: 250px;
+	box-sizing: content-box;
 	background-size: cover;
 	background-position: center;
 	background-image: url("../img/H-4.png");
 }
-footer p{font-size: 20px;}
+footer p{font-size: 18px;}
 .hidden{overflow: hidden;}
-.ban-l,.ban-r{position: absolute;}
+.ban-l,.ban-r{position: relative;}
 .ban-l{
 	left: 0;
-	transform: translate(-20%, 250px);
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
 	right: 0;
-	transform: translate(15%, 100px);
 	animation: lim-down 2s linear infinite alternate;
 }
 @media (min-width: 375px) {
 	.container {max-width: 335px;}
-	.banner{height: 190px;}
+	.banner{height: 200px;}
 	.banner-2{height: 135px;}
 	.ban-l,.ban-r{
 		width: 85px;
 		height: 70px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 250px) rotate(-10deg);}
-		100%{transform: translate(-20%, 250px) rotate(10deg);}
+		0%{transform: translate(-20%, 205px) rotate(-10deg);}
+		100%{transform: translate(-20%, 205px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
+	footer .container{flex-direction: column;}
 }
 @media (min-width: 576px) {
-	.banner{height: 290px;}
+	.banner{height: 295px;}
 	.banner-2{height: 215px;}
 	.ban-l,.ban-r{
 		width: 135px;
 		height: 115px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 340px) rotate(-10deg);}
-		100%{transform: translate(-20%, 340px) rotate(10deg);}
+		0%{transform: translate(-20%, 275px) rotate(-10deg);}
+		100%{transform: translate(-20%, 275px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 150px) rotate(-10deg);}
+		100%{transform: translate(15%, 150px) rotate(10deg);}
 	}
+	footer .container{flex-direction: column;}
 }
 @media (min-width: 768px){
-	.banner{height: 350px;}
+	.banner{height: 375px;}
 	.banner-2{height: 285px;}
 	.ban-l,.ban-r{
 		width: 180px;
 		height: 150px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 380px) rotate(-10deg);}
-		100%{transform: translate(-20%, 380px) rotate(10deg);}
+		0%{transform: translate(-20%, 335px) rotate(-10deg);}
+		100%{transform: translate(-20%, 335px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
+	footer .container{flex-direction: column;}
 }
 @media (min-width: 992px){
-	.banner{height: 450px;}
+	.banner{height: 490px;}
 	.banner-2{height: 380px;}
 	.ban-l,.ban-r{
 		width: 240px;
 		height: 200px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 450px) rotate(-10deg);}
-		100%{transform: translate(-20%, 450px) rotate(10deg);}
+		0%{transform: translate(-20%, 420px) rotate(-10deg);}
+		100%{transform: translate(-20%, 420px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
+	footer .container{flex-direction: row;}
 }
 @media (min-width: 1200px){
-	.banner{height: 550px;}
+	.banner{height: 570px;}
 	.banner-2{height: 450px;}
 	.ban-l,.ban-r{
 		width: 285px;
 		height: 240px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 520px) rotate(-10deg);}
-		100%{transform: translate(-20%, 520px) rotate(10deg);}
+		0%{transform: translate(-20%, 470px) rotate(-10deg);}
+		100%{transform: translate(-20%, 470px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
+	footer .container{flex-direction: row;}
 }
 @media (min-width: 1400px){
 	.banner{height: 650px;}
@@ -121,13 +124,14 @@ footer p{font-size: 20px;}
 		height: 280px;
 	}
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 575px) rotate(-10deg);}
-		100%{transform: translate(-20%, 575px) rotate(10deg);}
+		0%{transform: translate(-20%, 525px) rotate(-10deg);}
+		100%{transform: translate(-20%, 525px) rotate(10deg);}
 	}
 	@keyframes lim-down{
-		0%{transform: translate(15%, 100px) rotate(-10deg);}
-		100%{transform: translate(15%, 100px) rotate(10deg);}
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
+	footer .container{flex-direction: row;}
 }
 .ban-main{
 	width: 85%;
@@ -183,11 +187,13 @@ footer p{font-size: 20px;}
 .content-bg-3{
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-image: url("../img/B-6.png");
 }
 .content-bg-4{
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-image: url("../img/B-7.png");
 }
 .rotate{
@@ -209,11 +215,14 @@ footer p{font-size: 20px;}
 */
 .produ .aside{min-width: 500px;}
 .produ .aside-info p{
+	z-index: 1;
 	position: relative;
-	transform: translate(75px, 25px);
+	transform: translate(50px, 25px);
 }
-.produ .bside{min-width: 450px;}
+.produ .aside-info img{transform: translateX(-25px);}
+.produ .bside{min-width: 335px;}
 .produ .bside p{font-size: 32px;}
+.wrap-line{min-width: 250px;}
 .bg-1{
 	background-size: auto;
 	background-position: center;
@@ -224,6 +233,7 @@ footer p{font-size: 20px;}
 	background-position: center;
 	background-image: url("../img/S-6.png");
 }
+.bg-2 h5{min-width: 300px;}
 .d-grid{
 	grid-gap: 50px 50px;
 	grid-template-columns: auto auto auto auto;
