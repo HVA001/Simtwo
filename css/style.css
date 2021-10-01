@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-::-webkit-scrollbar{display: none;}
+*{scroll-behavior: smooth;}
+::-webkit-scrollbar{overflow: hidden;}
 p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html,body{
@@ -195,9 +196,8 @@ footer p{font-size: 20px;}
 	color: #683B31;
 	font-size: 36px; 
 }
-.produ h5{
+.produ h4{
 	color: #4E4E4E;
-	font-size: 20px; 
 }
 /*
 .produ .d-flex img{
@@ -207,8 +207,8 @@ footer p{font-size: 20px;}
 */
 .produ .aside{min-width: 500px;}
 .produ .aside-info p{
-	position: absolute;
-	transform: translate(-75%,75%);
+	position: relative;
+	transform: translate(75px, 25px);
 }
 .produ .bside{min-width: 450px;}
 .produ .bside p{font-size: 32px;}
