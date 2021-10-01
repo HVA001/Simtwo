@@ -248,7 +248,7 @@ footer p{font-size: 18px;}
 	transform: translate(-25%, -75%);
 }
 .content{
-	z-index: 1;
+	z-index: 2;
 	font-size: 36px;
 	text-align: center;
 	background-size: contain;
@@ -261,7 +261,7 @@ footer p{font-size: 18px;}
 	position: absolute;
 	transform: translateY(-85%);
 }
-.transup{transform: translateY(-100px);}
+.transup{transform: translateY(-50px);}
 .content-bg-1{
 	background-size: contain;
 	background-position: center;
