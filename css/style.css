@@ -33,7 +33,7 @@ footer p{font-size: 18px;}
 @media (min-width: 375px) {
 	.container {max-width: 335px;}
 	.banner{height: 200px;}
-	.banner-2{height: 135px;}
+	.banner-2{height: 110px;}
 	.ban-l,.ban-r{
 		width: 85px;
 		height: 70px;
@@ -50,7 +50,7 @@ footer p{font-size: 18px;}
 }
 @media (min-width: 576px) {
 	.banner{height: 295px;}
-	.banner-2{height: 215px;}
+	.banner-2{height: 180px;}
 	.ban-l,.ban-r{
 		width: 135px;
 		height: 115px;
@@ -67,7 +67,7 @@ footer p{font-size: 18px;}
 }
 @media (min-width: 768px){
 	.banner{height: 375px;}
-	.banner-2{height: 285px;}
+	.banner-2{height: 245px;}
 	.ban-l,.ban-r{
 		width: 180px;
 		height: 150px;
@@ -84,7 +84,7 @@ footer p{font-size: 18px;}
 }
 @media (min-width: 992px){
 	.banner{height: 490px;}
-	.banner-2{height: 380px;}
+	.banner-2{height: 320px;}
 	.ban-l,.ban-r{
 		width: 240px;
 		height: 200px;
@@ -101,7 +101,7 @@ footer p{font-size: 18px;}
 }
 @media (min-width: 1200px){
 	.banner{height: 570px;}
-	.banner-2{height: 450px;}
+	.banner-2{height: 390px;}
 	.ban-l,.ban-r{
 		width: 285px;
 		height: 240px;
@@ -118,7 +118,7 @@ footer p{font-size: 18px;}
 }
 @media (min-width: 1400px){
 	.banner{height: 650px;}
-	.banner-2{height: 525px;}
+	.banner-2{height: 450px;}
 	.ban-l,.ban-r{
 		width: 330px;
 		height: 280px;
@@ -150,12 +150,12 @@ footer p{font-size: 18px;}
 .ban-btl{
 	z-index: 1;
 	position: relative;
-	transform: translate(25%, -50%);
+	transform: translate(25%, -75%);
 }
 .ban-btr{
 	z-index: 1;
 	position: relative;
-	transform: translate(-25%, -50%);
+	transform: translate(-25%, -75%);
 }
 .content{
 	z-index: 1;
@@ -169,7 +169,7 @@ footer p{font-size: 18px;}
 .fw{
 	left: 0vw;
 	position: absolute;
-	transform: translateY(-100%);
+	transform: translateY(-85%);
 }
 .transup{transform: translateY(-100px);}
 .content-bg-1{
