@@ -2,19 +2,13 @@
 /* CSS Document */
 ::-webkit-scrollbar{display: none;}
 p{font-family: "Abril Fatface";}
-h1,h2,h3,h4,h5{font-family: "Cambria";}
+h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html,body{
 	height: 100%;
 	position: relative;
 }
-header{
-	top: 0;
-	z-index: 10;
-	width: 100%;
-	position: fixed;
-}
 nav{
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-image: url("../img/H-1.png");
 }
@@ -25,64 +19,122 @@ footer{
 	background-image: url("../img/H-4.png");
 }
 footer p{font-size: 20px;}
-.banner{height: 600px;}
-.banner-2{
-	height: 150px;
-	transform: translateY(100%);
-}
-.banner-2 p{position: absolute;}
-.ban-l,.ban-r{position: relative;}
+.hidden{overflow: hidden;}
+.ban-l,.ban-r{position: absolute;}
 .ban-l{
-	transform: translate(-15%, 225%);
+	left: 0;
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
-	transform:  translate(15%, 50%);
+	right: 0;
 	animation: lim-down 2s linear infinite alternate;
 }
-@keyframes lim-up{
-	0%{transform: translate(-15%, 225%) rotate(-10deg);}
-	100%{transform: translate(-15%, 225%) rotate(10deg);}
-}
-@keyframes lim-down{
-	0%{transform: translate(15%, 50%) rotate(-10deg);}
-	100%{transform: translate(15%, 50%) rotate(10deg);}
-}
-.ban-bh{
-	height: 900px;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/Bann-4.png");
-}
-@media (max-width: 768px){
-	.banner-2{
-		height: 100px;
-		transform: translateY(75%);
+@media (min-width: 375px) {
+	.container {max-width: 335px;}
+	.banner{height: 190px;}
+	.banner-2{height: 135px;}
+	.ban-l,.ban-r{
+		width: 85px;
+		height: 70px;
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 250px) rotate(-10deg);}
+		100%{transform: translate(-20%, 250px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
 	}
 }
-@media (max-width: 1024px){
-	.banner-2{
-		height: 100px;
-		transform: translateY(90%);
+@media (min-width: 576px) {
+	.banner{height: 290px;}
+	.banner-2{height: 215px;}
+	.ban-l,.ban-r{
+		width: 135px;
+		height: 115px;
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 340px) rotate(-10deg);}
+		100%{transform: translate(-20%, 340px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
 	}
 }
-@media (min-width: 1025px){
-	.banner-2{
+@media (min-width: 768px){
+	.banner{height: 350px;}
+	.banner-2{height: 285px;}
+	.ban-l,.ban-r{
+		width: 180px;
 		height: 150px;
-		transform: translateY(100%);
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 380px) rotate(-10deg);}
+		100%{transform: translate(-20%, 380px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
+	}
+}
+@media (min-width: 992px){
+	.banner{height: 450px;}
+	.banner-2{height: 380px;}
+	.ban-l,.ban-r{
+		width: 240px;
+		height: 200px;
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 450px) rotate(-10deg);}
+		100%{transform: translate(-20%, 450px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
+	}
+}
+@media (min-width: 1200px){
+	.banner{height: 550px;}
+	.banner-2{height: 450px;}
+	.ban-l,.ban-r{
+		width: 285px;
+		height: 240px;
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 520px) rotate(-10deg);}
+		100%{transform: translate(-20%, 520px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
+	}
+}
+@media (min-width: 1400px){
+	.banner{height: 650px;}
+	.banner-2{height: 525px;}
+	.ban-l,.ban-r{
+		width: 330px;
+		height: 280px;
+	}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 575px) rotate(-10deg);}
+		100%{transform: translate(-20%, 575px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 100px) rotate(-10deg);}
+		100%{transform: translate(15%, 100px) rotate(10deg);}
 	}
 }
 .ban-main{
-	width: 125%;
+	width: 85%;
 	position: relative;
-	transform: translate(-15%, 50%);
+	transform: translate(5%, -100%);
 }
 .ban-content{
 	z-index: 2;
-	width: 100%;
 	position: relative;
-	transform: translate(0, -25%);
+	transform: translate(0, -175%);
 }
 .ban-bt{
 	width: 100%;
@@ -100,32 +152,33 @@ footer p{font-size: 20px;}
 }
 .content{
 	z-index: 1;
-	font-size: 48px;
+	font-size: 36px;
 	text-align: center;
-	background-size: auto;
-	background: url("../img/B-3.png") no-repeat center;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/B-3.png");
 }
 .fw{
 	left: 0vw;
 	position: absolute;
-	transform: translateY(-75%);
+	transform: translateY(-100%);
 }
+.transup{transform: translateY(-100px);}
 .content-bg-1{
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-image: url("../img/B-4.png");
 }
 .content-bg-2{
-	position: absolute;
-	background-size: cover;
-	transform: translateY(-50%);
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-image: url("../img/B-5.png");
 }
 .content-bg-3{
-	position: absolute;
-	background-size: cover;
-	transform: translateY(-50%);
+	background-size: contain;
 	background-position: center;
 	background-image: url("../img/B-6.png");
 }
@@ -168,11 +221,6 @@ footer p{font-size: 20px;}
 	background-size: cover;
 	background-position: center;
 	background-image: url("../img/S-6.png");
-}
-.bg-3{
-	background-size: cover;
-	background-position: center;
-	background-image: url("../img/S-8.png");
 }
 .d-grid{
 	grid-gap: 50px 50px;
@@ -241,8 +289,8 @@ footer p{font-size: 20px;}
 .wrap-pd-2:hover{opacity: 0.75;}
 .scale-pd{
 	color: #fff;
-	width: 500px;
-	height: 200px;
+	width: 550px;
+	height: 250px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -261,10 +309,6 @@ footer p{font-size: 20px;}
 .scale-pd-2 p{
 	font-size: 24px;
 	font-family: "Abril Fatface";
-}
-.scale-pd-2 h5{
-	font-size: 14px;
-	font-family: "Cambria";
 }
 .scale-pd:hover .scale-pd-2{
 	opacity: 0;
