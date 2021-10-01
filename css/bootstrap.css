@@ -7337,11 +7337,11 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #0d6efd !important;
+  color: #f9dab9 !important;
 }
 
 .text-secondary {
-  color: #6c757d !important;
+  color: #683B31 !important;
 }
 
 .text-success {
@@ -7349,7 +7349,7 @@ textarea.form-control-lg {
 }
 
 .text-info {
-  color: #0dcaf0 !important;
+  color: #4e4e4e !important;
 }
 
 .text-warning {
@@ -7409,7 +7409,7 @@ textarea.form-control-lg {
 }
 
 .bg-info {
-  background-color: #0dcaf0 !important;
+  background-color: #4e4e4e !important;
 }
 
 .bg-warning {

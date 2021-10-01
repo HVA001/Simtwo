@@ -200,13 +200,7 @@ footer p{font-size: 18px;}
 	position: relative;
 	transform: rotate(180deg);
 }
-.produ p{
-	color: #683B31;
-	font-size: 36px; 
-}
-.produ h4{
-	color: #4E4E4E;
-}
+.produ p{font-size: 36px;}
 /*
 .produ .d-flex img{
 	position: relative;
@@ -282,6 +276,10 @@ footer p{font-size: 18px;}
 	background-image: url("../img/B-2.png");
 }
 .grid-pd-2 a{text-decoration: none;}
+.grid-pd-2 img{
+	max-height: 100%;
+	width: 100%;
+}
 .wrap-pd{
 	width: 300px;
 	height: 300px;

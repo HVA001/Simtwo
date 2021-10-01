@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- TemplateBeginEditable name="head" -->
 	<!-- TemplateEndEditable -->
 </head>
@@ -21,7 +22,7 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="container navbar-nav align-items-center d-flex justify-content-around">
 						<li class="nav-item col-2 text-center">
-							<a class="nav-link text-black-100" href="#"><h5>Home</h5></a>
+							<a class="nav-link text-black-100" href="../index.html"><h5>Home</h5></a>
 						</li>
 						<li class="nav-item col-2 text-center">
 							<a class="nav-link text-black-100" href="#"><h5>Blog</h5></a>
@@ -63,8 +64,14 @@
 			</div>
 			<div class="wrap-line">
 				<p class="pt-1 mt-3 mb-0"><b>CONTACT US</b></p>
-				<a href="#"><h6 class="py-1">0909299299</h6></a>
-				<a href="#"><h6 class="py-1">Mixoloxy</h6></a>
+				<a href="#"><h6 class="py-1"><i class="fa fa-phone"></i>&ensp;0909299299</h6></a>
+				<a href="#"><h6 class="py-1"><i class="fa fa-envelope"></i>&ensp;Mixoloxy</h6></a>
+				<div class="pt-3">
+					<a href="#"><i class="fa fa-facebook fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-twitter fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-youtube fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-instagram fa-2x"></i>&emsp;</a>
+				</div>
 			</div>
 		</div>
 	</footer>
