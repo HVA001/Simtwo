@@ -20,6 +20,199 @@ footer{
 	background-image: url("../img/H-4.png");
 }
 footer p{font-size: 18px;}
+@media (min-width: 375px) {
+	footer .container{flex-wrap: wrap;}
+	footer .fl-1{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	footer .fl-2{width: 50%;}
+	footer .fl-3{width: 50%;}
+	footer .fl-4{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer .fl-5{width: 50%;}
+	footer .fl-6{width: 50%;}
+	.container {max-width: 335px;}
+	.banner{height: 200px;}
+	.banner-2{height: 110px;}
+	.ban-l,.ban-r{
+		width: 85px;
+		height: 70px;
+	}
+	.produ .aside,.bside{width: 100%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 205px) rotate(-10deg);}
+		100%{transform: translate(-20%, 205px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
+@media (min-width: 576px) {
+	footer .container{flex-wrap: wrap;}
+	footer .fl-1{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	footer .fl-2{width: 50%;}
+	footer .fl-3{width: 50%;}
+	footer .fl-4{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer .fl-5{width: 50%;}
+	footer .fl-6{width: 50%;}
+	.banner{height: 295px;}
+	.banner-2{height: 180px;}
+	.ban-l,.ban-r{
+		width: 135px;
+		height: 115px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 275px) rotate(-10deg);}
+		100%{transform: translate(-20%, 275px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 150px) rotate(-10deg);}
+		100%{transform: translate(15%, 150px) rotate(10deg);}
+	}
+}
+@media (min-width: 768px){
+	footer .container{flex-wrap: wrap;}
+	footer .fl-1{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	footer .fl-2{width: 50%;}
+	footer .fl-3{width: 50%;}
+	footer .fl-4{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer .fl-5{width: 50%;}
+	footer .fl-6{width: 50%;}
+	.banner{height: 375px;}
+	.banner-2{height: 245px;}
+	.ban-l,.ban-r{
+		width: 180px;
+		height: 150px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 335px) rotate(-10deg);}
+		100%{transform: translate(-20%, 335px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
+@media (min-width: 992px){
+	footer .container{flex-wrap: nowrap;}
+	footer .fl-1{
+		display: block;
+		width: 41.66666667%;
+		padding-right: 3rem;
+	}
+	footer .fl-2{width: 16.66666667%;}
+	footer .fl-3{width: 16.66666667%;}
+	footer .fl-4{
+		width: 25%; 
+		display: block;
+	}
+	footer .fl-5{width: 100%;}
+	footer .fl-6{width: 100%;}
+	.banner{height: 490px;}
+	.banner-2{height: 320px;}
+	.ban-l,.ban-r{
+		width: 240px;
+		height: 200px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 420px) rotate(-10deg);}
+		100%{transform: translate(-20%, 420px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
+@media (min-width: 1200px){
+	footer .container{flex-wrap: nowrap;}
+	footer .fl-1{
+		display: block;
+		width: 41.66666667%;
+		padding-right: 3rem;
+	}
+	footer .fl-2{width: 16.66666667%;}
+	footer .fl-3{width: 16.66666667%;}
+	footer .fl-4{
+		width: 25%; 
+		display: block;
+	}
+	footer .fl-5{width: 100%;}
+	footer .fl-6{width: 100%;}
+	.banner{height: 570px;}
+	.banner-2{height: 390px;}
+	.ban-l,.ban-r{
+		width: 285px;
+		height: 240px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 470px) rotate(-10deg);}
+		100%{transform: translate(-20%, 470px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
+@media (min-width: 1400px){
+	footer .container{flex-wrap: nowrap;}
+	footer .fl-1{
+		display: block;
+		width: 41.66666667%;
+		padding-right: 3rem;
+	}
+	footer .fl-2{width: 16.66666667%;}
+	footer .fl-3{width: 16.66666667%;}
+	footer .fl-4{
+		width: 25%; 
+		display: block;
+	}
+	footer .fl-5{width: 100%;}
+	footer .fl-6{width: 100%;}
+	.banner{height: 650px;}
+	.banner-2{height: 450px;}
+	.ban-l,.ban-r{
+		width: 330px;
+		height: 280px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 525px) rotate(-10deg);}
+		100%{transform: translate(-20%, 525px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
 .hidden{overflow: hidden;}
 .ban-l,.ban-r{position: relative;}
 .ban-l{
@@ -29,109 +222,6 @@ footer p{font-size: 18px;}
 .ban-r{
 	right: 0;
 	animation: lim-down 2s linear infinite alternate;
-}
-@media (min-width: 375px) {
-	.container {max-width: 335px;}
-	.banner{height: 200px;}
-	.banner-2{height: 110px;}
-	.ban-l,.ban-r{
-		width: 85px;
-		height: 70px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 205px) rotate(-10deg);}
-		100%{transform: translate(-20%, 205px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
-	footer .container{flex-direction: column;}
-}
-@media (min-width: 576px) {
-	.banner{height: 295px;}
-	.banner-2{height: 180px;}
-	.ban-l,.ban-r{
-		width: 135px;
-		height: 115px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 275px) rotate(-10deg);}
-		100%{transform: translate(-20%, 275px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 150px) rotate(-10deg);}
-		100%{transform: translate(15%, 150px) rotate(10deg);}
-	}
-	footer .container{flex-direction: column;}
-}
-@media (min-width: 768px){
-	.banner{height: 375px;}
-	.banner-2{height: 245px;}
-	.ban-l,.ban-r{
-		width: 180px;
-		height: 150px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 335px) rotate(-10deg);}
-		100%{transform: translate(-20%, 335px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
-	footer .container{flex-direction: column;}
-}
-@media (min-width: 992px){
-	.banner{height: 490px;}
-	.banner-2{height: 320px;}
-	.ban-l,.ban-r{
-		width: 240px;
-		height: 200px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 420px) rotate(-10deg);}
-		100%{transform: translate(-20%, 420px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
-	footer .container{flex-direction: row;}
-}
-@media (min-width: 1200px){
-	.banner{height: 570px;}
-	.banner-2{height: 390px;}
-	.ban-l,.ban-r{
-		width: 285px;
-		height: 240px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 470px) rotate(-10deg);}
-		100%{transform: translate(-20%, 470px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
-	footer .container{flex-direction: row;}
-}
-@media (min-width: 1400px){
-	.banner{height: 650px;}
-	.banner-2{height: 450px;}
-	.ban-l,.ban-r{
-		width: 330px;
-		height: 280px;
-	}
-	@keyframes lim-up{
-		0%{transform: translate(-20%, 525px) rotate(-10deg);}
-		100%{transform: translate(-20%, 525px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
-	footer .container{flex-direction: row;}
 }
 .ban-main{
 	width: 85%;
@@ -207,16 +297,15 @@ footer p{font-size: 18px;}
 	transform: translateX(-15%);
 }
 */
-.produ .aside{min-width: 500px;}
+.produ .aside,.bside{min-width: 320px;}
 .produ .aside-info p{
 	z-index: 1;
 	position: relative;
 	transform: translate(50px, 25px);
 }
 .produ .aside-info img{transform: translateX(-25px);}
-.produ .bside{min-width: 335px;}
 .produ .bside p{font-size: 32px;}
-.wrap-line{min-width: 250px;}
+.wrap-line{min-width: 200px;}
 .bg-1{
 	background-size: auto;
 	background-position: center;
