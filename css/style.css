@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 *{scroll-behavior: smooth;}
-::-webkit-scrollbar{overflow: hidden;}
+::-webkit-scrollbar{display: none;overflow: hidden}
 p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html,body{
@@ -24,10 +24,12 @@ footer p{font-size: 20px;}
 .ban-l,.ban-r{position: absolute;}
 .ban-l{
 	left: 0;
+	transform: translate(-20%, 250px);
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
 	right: 0;
+	transform: translate(15%, 100px);
 	animation: lim-down 2s linear infinite alternate;
 }
 @media (min-width: 375px) {

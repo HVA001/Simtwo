@@ -40,10 +40,10 @@
 	</header>
 	<!-- InstanceBeginEditable name="main" -->
 	<div class="container">
+		<img class="ban-l float-start" src="img/Bann-6.png">
+		<img class="ban-r float-end" src="img/Bann-5.png">
 		<div class="hidden">
 			<div class="bg-primary d-flex align-items-center flex-column pt-5">
-				<img class="ban-l float-start" id="ban-l" src="img/Bann-6.png">
-				<img class="ban-r float-end" id="ban-r" src="img/Bann-5.png">
 				<div class="banner w-50 d-flex align-items-center flex-column mt-5">
 					<img class="ban-bg w-100 pt-5" src="img/Bann-4.png">
 					<img class="ban-main" id="ban-main" src="img/Bann-1.png">
@@ -346,16 +346,12 @@
 		});
 	</script>
 	<script>
-		let left = document.getElementById("ban-l");
-		let right = document.getElementById("ban-r");
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
 		let btl = document.getElementById("ban-btl");
 		let btr = document.getElementById("ban-btr");
 		window.addEventListener("scroll",function(){
 			let value = window.scrollY;
-			left.style.left = -value/3 + 'px';
-			right.style.right = -value/3 + 'px';
 			main.style.top = value*2.5 + 'px';
 			content.style.top= value*0.25 + 'px';
 			btl.style.right = value/4 + 'px';
