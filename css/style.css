@@ -328,34 +328,34 @@ footer{
 }
 .transup{transform: translateY(-50px);}
 .content-bg-1{
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/B-4.png");
+	background-position: left, right;
+	background-size: contain, contain;
+	background-repeat: no-repeat,no-repeat;
+	background-image: url("../img/B-4.png"), url("../img/B-4-2.png");
 }
 .content-bg-2{
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/B-5.png");
+	background-position: left, right;
+	background-size: contain, contain;
+	background-repeat: no-repeat,no-repeat;
+	background-image: url("../img/B-5.png"), url("../img/B-5-2.png");
 }
 .content-bg-3{
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/B-6.png");
+	background-position: left, right;
+	background-size: contain, contain;
+	background-repeat: no-repeat,no-repeat;
+	background-image: url("../img/B-6.png"), url("../img/B-6-2.png");
 }
 .content-bg-4{
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/B-7.png");
+	background-position: left, right;
+	background-size: contain, contain;
+	background-repeat: no-repeat,no-repeat;
+	background-image: url("../img/B-7.png"), url("../img/B-7-2.png");
 }
-.content-bg-4{
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url("../img/B-13.png");
+.content-bg-5{
+	background-position: left, right;
+	background-size: contain, contain;
+	background-repeat: no-repeat,no-repeat;
+	background-image: url("../img/B-11.png"), url("../img/B-11-2.png");
 }
 .rotate{
 	position: relative;
@@ -395,12 +395,18 @@ footer{
 	min-height: 400px;
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-position: top left, top right, bottom right,bottom left;
-	background-image: url("../img/B-9.png"), url("../img/B-10.png"), url("../img/B-11.png"), url("../img/B-12.png");
+	background-image: url("../img/B-9.png"), url("../img/B-9-2.png"), url("../img/B-9-3.png"), url("../img/B-9-4.png");
 }
 .bg-4 input::placeholder{
 	color: #683B31;
 	font-size: 18px;
 	font-style: "Abril Fatface";
+}
+.bg-5{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/Bann-12.png");
 }
 .d-grid{
 	grid-gap: 50px 50px;
