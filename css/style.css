@@ -19,8 +19,13 @@ footer{
 	background-position: center;
 	background-image: url("../img/H-4.png");
 }
-footer p{font-size: 18px;}
-@media (min-width: 375px) {
+.font-1{font-size: 13px;}
+.font-2{font-size: 18px;}
+.font-3{font-size: 24px;}
+.font-4{font-size: 32px;}
+.font-5{font-size: 36px;}
+.font-6{font-size: 48px;}
+@media (min-width: 375px){
 	footer .container{flex-wrap: wrap;}
 	footer .fl-1{
 		width: 100%;
@@ -53,7 +58,7 @@ footer p{font-size: 18px;}
 		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
 }
-@media (min-width: 576px) {
+@media (min-width: 576px){
 	footer .container{flex-wrap: wrap;}
 	footer .fl-1{
 		width: 100%;
@@ -212,6 +217,68 @@ footer p{font-size: 18px;}
 		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
 }
+@media (min-width: 1600px){
+  footer .container{flex-wrap: nowrap;}
+	footer .fl-1{
+		display: block;
+		width: 41.66666667%;
+		padding-right: 3rem;
+	}
+	footer .fl-2{width: 16.66666667%;}
+	footer .fl-3{width: 16.66666667%;}
+	footer .fl-4{
+		width: 25%; 
+		display: block;
+	}
+	footer .fl-5{width: 100%;}
+	footer .fl-6{width: 100%;}
+	.banner{height: 675px;}
+	.banner-2{height: 520px;}
+	.ban-l,.ban-r{
+		width: 350px;
+		height: 290px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 575px) rotate(-10deg);}
+		100%{transform: translate(-20%, 575px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
+@media (min-width: 1900px){
+  footer .container{flex-wrap: nowrap;}
+	footer .fl-1{
+		display: block;
+		width: 41.66666667%;
+		padding-right: 3rem;
+	}
+	footer .fl-2{width: 16.66666667%;}
+	footer .fl-3{width: 16.66666667%;}
+	footer .fl-4{
+		width: 25%; 
+		display: block;
+	}
+	footer .fl-5{width: 100%;}
+	footer .fl-6{width: 100%;}
+	.banner{height: 700px;}
+	.banner-2{height: 620px;}
+	.ban-l,.ban-r{
+		width: 420px;
+		height: 350px;
+	}
+	.produ .aside,.bside{width: 50%;}
+	@keyframes lim-up{
+		0%{transform: translate(-20%, 625px) rotate(-10deg);}
+		100%{transform: translate(-20%, 625px) rotate(10deg);}
+	}
+	@keyframes lim-down{
+		0%{transform: translate(15%, 50px) rotate(-10deg);}
+		100%{transform: translate(15%, 50px) rotate(10deg);}
+	}
+}
 .hidden{overflow: hidden;}
 .ban-l,.ban-r{position: relative;}
 .ban-l{
@@ -248,7 +315,6 @@ footer p{font-size: 18px;}
 }
 .content{
 	z-index: 2;
-	font-size: 36px;
 	text-align: center;
 	background-size: contain;
 	background-position: center;
@@ -285,11 +351,16 @@ footer p{font-size: 18px;}
 	background-repeat: no-repeat;
 	background-image: url("../img/B-7.png");
 }
+.content-bg-4{
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/B-13.png");
+}
 .rotate{
 	position: relative;
 	transform: rotate(180deg);
 }
-.produ p{font-size: 36px;}
 /*
 .produ .d-flex img{
 	position: relative;
@@ -303,7 +374,6 @@ footer p{font-size: 18px;}
 	transform: translate(50px, 25px);
 }
 .produ .aside-info img{transform: translateX(-25px);}
-.produ .bside p{font-size: 32px;}
 .wrap-line{min-width: 200px;}
 .bg-1{
 	background-size: auto;
@@ -315,7 +385,23 @@ footer p{font-size: 18px;}
 	background-position: center;
 	background-image: url("../img/S-6.png");
 }
-.bg-2 h5{min-width: 300px;}
+.bg-3{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/Bann-9.png");
+}
+.bg-4{
+	min-height: 400px;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-position: top left, top right, bottom right,bottom left;
+	background-image: url("../img/B-9.png"), url("../img/B-10.png"), url("../img/B-11.png"), url("../img/B-12.png");
+}
+.bg-4 input::placeholder{
+	color: #683B31;
+	font-size: 18px;
+	font-style: "Abril Fatface";
+}
 .d-grid{
 	grid-gap: 50px 50px;
 	grid-template-columns: auto auto auto auto;
@@ -383,7 +469,6 @@ footer p{font-size: 18px;}
 	opacity: 0;
 	transition: 1s;
 }
-.wrap-pd-2 p{font-size: 48px;}
 .wrap-pd-2:hover{opacity: 0.75;}
 .scale-pd{
 	color: #fff;
@@ -404,13 +489,18 @@ footer p{font-size: 18px;}
 	transition: 1s;
 	background-color: rgba(104,59,49,0.75);
 }
-.scale-pd-2 p{
-	font-size: 24px;
-	font-family: "Abril Fatface";
-}
 .scale-pd:hover .scale-pd-2{
 	opacity: 0;
 	border-radius: 10%;
 	transform: translateX(-135%)scale(0.5);
 }
 .end-page{transform: translateY(10%);}
+.database button{
+	color: #683B31;
+	font-family: "Abril Fatface";
+}
+.database button:hover{
+	color: #fff;
+	background-color: #683B31;
+}
+.database-2 button{font-family: "Abril Fatface";}
