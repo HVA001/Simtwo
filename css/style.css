@@ -4,10 +4,6 @@
 ::-webkit-scrollbar{display: none;}
 p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
-html,body{
-	height: 100%;
-	position: relative;
-}
 nav{
 	background-size: contain;
 	background-position: center;
@@ -361,12 +357,6 @@ footer{
 	position: relative;
 	transform: rotate(180deg);
 }
-/*
-.produ .d-flex img{
-	position: relative;
-	transform: translateX(-15%);
-}
-*/
 .produ .aside,.bside{min-width: 320px;}
 .produ .aside-info p{
 	z-index: 1;
@@ -376,14 +366,14 @@ footer{
 .produ .aside-info img{transform: translateX(-25px);}
 .wrap-line{min-width: 200px;}
 .bg-1{
-	background-size: auto;
-	background-position: center;
-	background-image: url("../img/S-7.png");
-}
-.bg-2{
 	background-size: cover;
 	background-position: center;
 	background-image: url("../img/S-6.png");
+}
+.bg-2{
+	background-size: auto;
+	background-position: center;
+	background-image: url("../img/S-7.png");
 }
 .bg-3{
 	background-size: cover;
@@ -406,38 +396,11 @@ footer{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url("../img/Bann-12.png");
+	background-image: url("../img/S-8.png");
 }
 .d-grid{
 	grid-gap: 50px 50px;
 	grid-template-columns: auto auto auto auto;
-}
-.gridswiper{
-	width: 100%;
-/*	height: 100%;*/
-	margin-left: auto;
-	margin-right: auto;
-}
-.gridswiper-slide{
-	height: 100%;
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	height: calc((100% - 30px) / 2);
-
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
 }
 .grid-pd{
 	width: 200px;

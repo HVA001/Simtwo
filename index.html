@@ -7,7 +7,6 @@
 <!-- InstanceEndEditable -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
@@ -40,7 +39,7 @@
 		</nav>
 	</header>
 	<!-- InstanceBeginEditable name="main" -->
-		<div class="container">
+		<div class="bg-1 container">
 			<div class="hidden bg-primary d-flex align-items-center flex-column pt-5">
 				<div class="d-flex">
 					<div class="w-25">
@@ -61,7 +60,7 @@
 					<img class="ban-btr col-6 float-end" id="ban-btr" src="img/Bann-7.png">
 				</div>
 			</div>
-			<div class="bg-2 text-center pb-5">
+			<div class="text-center pb-5">
 				<p class="fw content font-5 w-100 mx-auto py-5"><b>WHAT’S COCKTAIL ?</b></p>
 				<h4 class="col-6 mx-auto pt-5 pb-3">A cocktail is an alcoholic mixed drink. Most commonly, cocktails are either a combination of spirits, or one or more spirits mixed with other ingredients such as fruit juice, flavored syrup, or cream. Cocktails vary widely across regions of the world, and many websites publish both original recipes and their own interpretations of older and more famous cocktails</h4>
 				<h4 class="col-6 mx-auto pb-5">The origins of the word cocktail have been debated. The first written mention of cocktail as a beverage appeared in The Farmers Cabinet, 1803 in the United States. The first definition of a cocktail as an alcoholic beverage appeared three years later in The Balance and Columbian Repository (Hudson, New York) May 13, 1806. Traditionally, cocktail ingredients included spirits, sugar, water and bitters, however, this definition evolved throughout the 1800s, to include the addition of a liqueur.</h4>
@@ -99,7 +98,7 @@
 				</div>
 				<img class="w-75 mx-auto mb-5 pb-5" src="img/H-2.png">
 			</div>
-			<div class="bg-1 text-center pb-5">
+			<div class="text-center pb-5">
 				<div class="content-bg-2 transup py-5 w-100 text-center">
 					<p class="content font-5 py-5"><b>CLASSIC COCKTAIL</b></p>
 				</div>
@@ -158,65 +157,7 @@
 					<img class="w-75" src="img/H-2.png">
 				</div>
 			</div>
-	<!--
-		<div class="container text-center my-5">
-			<p class="content py-5"><b>CLASSIC COCKTAIL</b></p>
-			<div class="swiper gridswiper">
-				<div class="swiper-wrapper pb-5">
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4">
-								<img src="img/P-2.png">
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4">
-								<img src="img/P-3.png">
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4">
-								<img src="img/P-4.png">
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4">
-								<img src="img/P-5.png">
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4">
-								<img src="img/P-6.png">
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-					<div class="gridswiper-slide swiper-slide">
-						<div class="grid-pd">
-							<div class="grid-pd-2 mx-4 mt-4 d-flex justify-content-center align-items-center">
-								<a class="content">See more</a>
-							</div>
-							<h3 class="my-2">Lorem Ipsum</h3>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
-	-->
-			<div class="bg-2 text-center">
+			<div class="text-center">
 				<div class="content-bg-3 transup py-5 w-100 text-center">
 					<p class="content font-5 py-5"><b>SPIRITS LIST</b></p>
 				</div>
@@ -289,7 +230,7 @@
 						</div>
 					</a>
 				</div>
-				<button class="bg-secondary text-white px-5 py-2 mb-5"><b>See more</b></button>
+				<button class="bg-secondary py-2 px-4 mb-5"><a class="text-white" href="place.html"><b>See more</b></a></button>
 				<div>
 					<img class="w-75" src="img/H-2.png">
 				</div>
@@ -332,20 +273,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".gridswiper",{
-		slidesPerView: 4,
-		grid: {
-//			rows: 2,
-		},
-		spaceBetween: 30,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-			},
-		});
-	</script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
@@ -358,7 +285,7 @@
 			btl.style.right = value/4 + 'px';
 			btr.style.left = value/4 + 'px';
 		})
-	</script>
+	</script> 
 	<script src="js/bootstrap.min.js"></script>
 </body>
 <!-- InstanceEnd --></html>

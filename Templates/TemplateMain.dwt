@@ -7,7 +7,6 @@
 <!-- TemplateEndEditable -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- TemplateBeginEditable name="head" -->
 	<!-- TemplateEndEditable -->
@@ -77,20 +76,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".gridswiper",{
-		slidesPerView: 4,
-		grid: {
-//			rows: 2,
-		},
-		spaceBetween: 30,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-			},
-		});
-	</script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
@@ -103,7 +88,7 @@
 			btl.style.right = value/4 + 'px';
 			btr.style.left = value/4 + 'px';
 		})
-	</script>
+	</script> 
 	<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

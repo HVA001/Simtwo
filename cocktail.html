@@ -7,7 +7,6 @@
 <!-- InstanceEndEditable -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
@@ -56,35 +55,37 @@
 						<button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 m-3" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>GLASS&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button>
 						<button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 m-3" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>INGREDIENTS&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button>
 					</p>
-					<div id="occasions" class="collapse d-flex py-5">
-						<div class="text-start px-5 mx-5">
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
-						</div>
-						<div class="text-start px-5 mx-5">
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
-						</div>
-						<div class="text-start px-5 mx-5">
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
-						</div>
-						<div class="text-start px-5 mx-5">
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
-							<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
-						</div>
+					<div class="collapse" id="occasions">
+						<ul class="d-flex py-5">
+							<li class="text-start px-5 mx-5">
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
+							</li>
+							<li class="text-start px-5 mx-5">
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
+							</li>
+							<li class="text-start px-5 mx-5">
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
+							</li>
+							<li class="text-start px-5 mx-5">
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Herbal</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Light</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Zesty</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Clean</p>
+								<p class="font-4"><input type="checkbox" class="form-check-input">&ensp;Bitter</p>
+							</li>
+						</ul>
 					</div>
 					<div class="database-2">
 						<button class="font-3 text-white bg-secondary px-5 py-2 mx-3">SEARCH</button>
@@ -218,11 +219,13 @@
 						<h5 class="mt-2"><b>Lorem Ipsum</b></h5>
 					</a>
 				</div>	
-				<button class="bg-dark text-white p-3 mx-2"><b>1</b></button>
-				<button class="bg-dark text-white p-3 mx-2"><b>2</b></button>
-				<button class="bg-dark text-white p-3 mx-2"><b>3</b></button>
-				<button class="bg-dark text-white p-3 mx-2"><b>4</b></button>
-				<button class="bg-dark text-white p-3 mx-2"><b>5</b></button>
+				<div>
+					<button class="bg-dark text-white p-3 mx-2"><b>1</b></button>
+					<button class="bg-dark text-white p-3 mx-2"><b>2</b></button>
+					<button class="bg-dark text-white p-3 mx-2"><b>3</b></button>
+					<button class="bg-dark text-white p-3 mx-2"><b>4</b></button>
+					<button class="bg-dark text-white p-3 mx-2"><b>5</b></button>
+				</div>
 				<div>
 					<img class="w-100" src="img/B-10.png">
 				</div>
@@ -264,20 +267,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script>
-		var swiper = new Swiper(".gridswiper",{
-		slidesPerView: 4,
-		grid: {
-//			rows: 2,
-		},
-		spaceBetween: 30,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-			},
-		});
-	</script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
@@ -290,7 +279,7 @@
 			btl.style.right = value/4 + 'px';
 			btr.style.left = value/4 + 'px';
 		})
-	</script>
+	</script> 
 	<script src="js/bootstrap.min.js"></script>
 </body>
 <!-- InstanceEnd --></html>
