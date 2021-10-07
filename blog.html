@@ -1,0 +1,119 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/TemplateMain.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Simtwo</title>
+<!-- InstanceEndEditable -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- InstanceBeginEditable name="head" -->
+	<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light shadow-lg">
+			<div class="container mx-auto align-items-center d-flex justify-content-between">
+				<a class="navbar-brand d-lg-none" href="#"><img src="img/Logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="container navbar-nav align-items-center d-flex justify-content-around">
+						<li class="nav-item text-center">
+							<a class="nav-link text-black-100" href="index.html"><h4>Home</h4></a>
+						</li>
+						<li class="nav-item text-center">
+							<a class="nav-link text-black-100" href="#"><h4>Blog</h4></a>
+						</li>
+						<li><a class="d-none d-lg-block nav-link text-black-100 text-center" href="#"><img src="img/Logo.png"></a></li>
+						<li class="nav-item text-center text-center">
+							<a class="nav-link text-black-100" href="cocktail.html"><h4>Cocktail</h4></a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link text-black-100" href="#"><h4>Contact us</h4></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- InstanceBeginEditable name="main" -->	
+		<div class="bg-1 container pt-5 mt-5">
+			<div class="content-bg-4 py-5 w-100 text-center">
+				<p class="content font-5 py-5"><b>PLACE FOR ENJOY</b></p>
+			</div>
+			<div id="banner" class="container">
+	<div id="slidescontrols" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100 index1" src="img/Bann-12.png" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100 index1" src="img/Bann-12.png" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100 index1" src="img/Bann-12.png" alt="Third slide">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#slidescontrols" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="false"></span>
+		</a>
+		<a class="carousel-control-next" href="#slidescontrols" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="false"></span>
+		</a>
+	</div>
+</div>
+		</div>
+	<!-- InstanceEndEditable -->
+	<footer class="shadow-lg-is">
+		<div class="container d-flex align-content-between py-3">
+			<div class="fl-1 col-5">
+				<a href="#"><img class="pt-2 pb-3" src="img/Logo.png"></a>
+				<h6 class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare sem.</h6>
+			</div>
+			<div class="fl-2 col-2">
+				<p class="font-2 pt-1 mt-3 mb-0"><b>INFOMATION</b></p>
+				<a href="#"><h6 class="py-1">About Us</h6></a>
+				<a href="#"><h6 class="py-1">More Search</h6></a>
+				<a href="#"><h6 class="py-1">Blog</h6></a>
+				<a href="#"><h6 class="py-1">Event</h6></a>
+			</div>
+			<div class="fl-3 col-2">
+				<p class="font-2 pt-1 mt-3 mb-0"><b>OUR SERVICES</b></p>
+				<a href="#"><h6 class="py-1">Brand List</h6></a>
+				<a href="#"><h6 class="py-1">Cocktail</h6></a>
+				<a href="#"><h6 class="py-1">New Style</h6></a>
+				<a href="#"><h6 class="py-1">Classic</h6></a>
+			</div>
+			<div class="fl-4 col-3">
+				<p class="font-2 w-100 pt-1 mt-3 mb-0"><b>CONTACT US</b></p>
+				<div class="fl-5">
+					<a href="#"><h6 class="py-1"><i class="fa fa-phone"></i>&ensp;0909299299</h6></a>
+					<a href="#"><h6 class="py-1"><i class="fa fa-envelope"></i>&ensp;Mixoloxy</h6></a>
+				</div>
+				<div class="fl-6 d-flex flex-wrap pt-3">
+					<a href="#"><i class="fa fa-facebook fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-twitter fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-youtube fa-2x"></i>&emsp;</a>
+					<a href="#"><i class="fa fa-instagram fa-2x"></i>&emsp;</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		let main = document.getElementById("ban-main");
+		let content= document.getElementById("ban-content");
+		let btl = document.getElementById("ban-btl");
+		let btr = document.getElementById("ban-btr");
+		window.addEventListener("scroll",function(){
+			let value = window.scrollY;
+			main.style.top = value*2.5 + 'px';
+			content.style.top= value*0.25 + 'px';
+			btl.style.right = value/4 + 'px';
+			btr.style.left = value/4 + 'px';
+		})
+	</script> 
+	<script src="js/bootstrap.min.js"></script>
+</body>
+<!-- InstanceEnd --></html>
