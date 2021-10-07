@@ -38,9 +38,6 @@ footer{
 	}
 	footer .fl-5{width: 50%;}
 	footer .fl-6{width: 50%;}
-	.w-25{width: 100%;}
-	.w-50{width: 100%;}
-	.w-75{width: 100%;}
 	.font-1{font-size: 13px;}
 	.font-2{font-size: 16px;}
 	.font-3{font-size: 18px;}
@@ -486,3 +483,4 @@ footer{
 }
 .database-2 button{font-family: "Abril Fatface";}
 .collapse ul{list-style-type:none;}
+.transform{transform: scale(2);}
