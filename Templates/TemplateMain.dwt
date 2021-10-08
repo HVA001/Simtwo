@@ -16,23 +16,25 @@
 	<header class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light shadow-lg">
 			<div class="container mx-auto align-items-center d-flex justify-content-between">
-				<a class="navbar-brand d-lg-none" href="#"><img src="../img/Logo.png"></a>
+				<a class="navbar-brand pb-3 ms-5" href="#"><img src="../img/Logo.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="container navbar-nav align-items-center d-flex justify-content-around">
-						<li class="nav-item text-center">
-							<a class="nav-link text-black-100" href="../index.html"><h4>Home</h4></a>
-						</li>
-						<li class="nav-item text-center">
-							<a class="nav-link text-black-100" href="#"><h4>Blog</h4></a>
-						</li>
-						<li><a class="d-none d-lg-block nav-link text-black-100 text-center" href="#"><img src="../img/Logo.png"></a></li>
-						<li class="nav-item text-center text-center">
-							<a class="nav-link text-black-100" href="../cocktail.html"><h4>Cocktail</h4></a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link text-black-100" href="#"><h4>Contact us</h4></a>
-						</li>
+					<ul class="container navbar-nav align-items-center d-flex justify-content-end">
+						<li class="nav-item mx-3"><a class="font-3 nav-link" href="../index.html"><b>Home</b></a></li>
+						<li class="nav-item mx-3"><a class="font-3 nav-link" href="../cocktail.html"><b>Cocktails</b></a></li>
+						<div class="dropdown text-center mx-3">
+							<a class="font-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<b>Spirits</b></a>
+							<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>BRANDY</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>WHISKY</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>GIN</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>RUM</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>TEQUILA& MEZCAL</b></a></li>
+							</ul>
+						</div>
+						<li class="nav-item mx-3"><a class="font-3 nav-link" href="../placelist.html"><b>Bar</b></a></li>
+						<li class="nav-item mx-3"><a class="font-3 nav-link" href="#"><b>Contact us</b></a></li>
 					</ul>
 				</div>
 			</div>

@@ -2,7 +2,7 @@
 /* CSS Document */
 *{scroll-behavior: smooth;}
 ::-webkit-scrollbar{display: none;}
-p{font-family: "Abril Fatface";}
+a,p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 nav{
 	background-size: contain;

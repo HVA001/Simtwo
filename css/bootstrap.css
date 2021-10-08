@@ -3476,14 +3476,16 @@ textarea.form-control-lg {
   position: absolute;
   z-index: 1000;
   display: none;
-  min-width: 10rem;
+  min-width: 5rem;
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/H-1.png");
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -3692,13 +3694,13 @@ textarea.form-control-lg {
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #1e2125;
-  background-color: #e9ecef;
+  color: #fff;
+  background-color: #683B31;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #0d6efd;
+  background-color: #683B31;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
