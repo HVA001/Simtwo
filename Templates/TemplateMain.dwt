@@ -85,13 +85,13 @@
 		var swiper = new Swiper(".thumbSwiper", {
 			loop: true,
 			freeMode: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			slidesPerView: 4,
 			watchSlidesProgress: true,
 		});
 		var swiper2 = new Swiper(".thumbSwiper2", {
 			loop: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			thumbs: {swiper: swiper,},
 			navigation: {
 				nextEl: ".swiper-button-next",

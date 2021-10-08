@@ -79,7 +79,7 @@
 			<div class="content-bg-4 py-5 w-100 text-center">
 				<p class="content font-6 py-5"><b>GALARRY</b></p>
 			</div>
-			<div class="swiper thumbSwiper2">
+			<div class="swiper thumbSwiper2 p-5">
 				<div class="swiper-wrapper">
 					<img class="swiper-slide" src="img/Bann-14.png">
 					<img class="swiper-slide" src="img/Bann-14.png">
@@ -89,7 +89,7 @@
 				<div class="swiper-button-next"></div>
 				<div class="swiper-button-prev"></div>
 			</div>
-			<div class="swiper thumbSwiper">
+			<div class="swiper thumbSwiper px-5">
 				<div class="swiper-wrapper">
 					<img class="swiper-slide" src="img/Bann-14.png">
 					<img class="swiper-slide" src="img/Bann-14.png">
@@ -251,13 +251,13 @@
 		var swiper = new Swiper(".thumbSwiper", {
 			loop: true,
 			freeMode: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			slidesPerView: 4,
 			watchSlidesProgress: true,
 		});
 		var swiper2 = new Swiper(".thumbSwiper2", {
 			loop: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			thumbs: {swiper: swiper,},
 			navigation: {
 				nextEl: ".swiper-button-next",
