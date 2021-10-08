@@ -50,7 +50,11 @@ footer{
 		width: 85px;
 		height: 70px;
 	}
-	.aside,.bside{width: 100%;}
+	.aside, .bside, .cside{width: 100%;}
+	.wrap-pd{
+		width: 320px;
+		height: 320px;
+	}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 205px) rotate(-10deg);}
 		100%{transform: translate(-20%, 205px) rotate(10deg);}
@@ -61,29 +65,16 @@ footer{
 	}
 }
 @media (min-width: 576px){
-	footer .container{flex-wrap: wrap;}
-	footer .fl-1{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-	footer .fl-2{width: 50%;}
-	footer .fl-3{width: 50%;}
-	footer .fl-4{
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	footer .fl-5{width: 50%;}
-	footer .fl-6{width: 50%;}
 	.banner{height: 295px;}
 	.banner-2{height: 180px;}
 	.ban-l,.ban-r{
 		width: 135px;
 		height: 115px;
 	}
-	.aside,.bside{width: 50%;}
+	.scale-pd{
+		width: 700px;
+		height: 300px;
+	}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 275px) rotate(-10deg);}
 		100%{transform: translate(-20%, 275px) rotate(10deg);}
@@ -94,29 +85,12 @@ footer{
 	}
 }
 @media (min-width: 768px){
-	footer .container{flex-wrap: wrap;}
-	footer .fl-1{
-		width: 100%;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-	}
-	footer .fl-2{width: 50%;}
-	footer .fl-3{width: 50%;}
-	footer .fl-4{
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	footer .fl-5{width: 50%;}
-	footer .fl-6{width: 50%;}
 	.banner{height: 375px;}
 	.banner-2{height: 245px;}
 	.ban-l,.ban-r{
 		width: 180px;
 		height: 150px;
 	}
-	.aside,.bside{width: 50%;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 335px) rotate(-10deg);}
 		100%{transform: translate(-20%, 335px) rotate(10deg);}
@@ -147,7 +121,6 @@ footer{
 		width: 240px;
 		height: 200px;
 	}
-	.aside,.bside{width: 50%;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 420px) rotate(-10deg);}
 		100%{transform: translate(-20%, 420px) rotate(10deg);}
@@ -158,27 +131,12 @@ footer{
 	}
 }
 @media (min-width: 1200px){
-	footer .container{flex-wrap: nowrap;}
-	footer .fl-1{
-		display: block;
-		width: 41.66666667%;
-		padding-right: 3rem;
-	}
-	footer .fl-2{width: 16.66666667%;}
-	footer .fl-3{width: 16.66666667%;}
-	footer .fl-4{
-		width: 25%; 
-		display: block;
-	}
-	footer .fl-5{width: 100%;}
-	footer .fl-6{width: 100%;}
 	.banner{height: 570px;}
 	.banner-2{height: 390px;}
 	.ban-l,.ban-r{
 		width: 285px;
 		height: 240px;
 	}
-	.aside,.bside{width: 50%;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 470px) rotate(-10deg);}
 		100%{transform: translate(-20%, 470px) rotate(10deg);}
@@ -189,27 +147,12 @@ footer{
 	}
 }
 @media (min-width: 1400px){
-	footer .container{flex-wrap: nowrap;}
-	footer .fl-1{
-		display: block;
-		width: 41.66666667%;
-		padding-right: 3rem;
-	}
-	footer .fl-2{width: 16.66666667%;}
-	footer .fl-3{width: 16.66666667%;}
-	footer .fl-4{
-		width: 25%; 
-		display: block;
-	}
-	footer .fl-5{width: 100%;}
-	footer .fl-6{width: 100%;}
 	.banner{height: 650px;}
 	.banner-2{height: 450px;}
 	.ban-l,.ban-r{
 		width: 330px;
 		height: 280px;
 	}
-	.aside,.bside{width: 50%;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 525px) rotate(-10deg);}
 		100%{transform: translate(-20%, 525px) rotate(10deg);}
@@ -220,27 +163,12 @@ footer{
 	}
 }
 @media (min-width: 1600px){
-  footer .container{flex-wrap: nowrap;}
-	footer .fl-1{
-		display: block;
-		width: 41.66666667%;
-		padding-right: 3rem;
-	}
-	footer .fl-2{width: 16.66666667%;}
-	footer .fl-3{width: 16.66666667%;}
-	footer .fl-4{
-		width: 25%; 
-		display: block;
-	}
-	footer .fl-5{width: 100%;}
-	footer .fl-6{width: 100%;}
 	.banner{height: 675px;}
 	.banner-2{height: 520px;}
 	.ban-l,.ban-r{
 		width: 350px;
 		height: 290px;
 	}
-	.aside,.bside{width: 50%;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 575px) rotate(-10deg);}
 		100%{transform: translate(-20%, 575px) rotate(10deg);}
@@ -251,27 +179,16 @@ footer{
 	}
 }
 @media (min-width: 1900px){
-  footer .container{flex-wrap: nowrap;}
-	footer .fl-1{
-		display: block;
-		width: 41.66666667%;
-		padding-right: 3rem;
-	}
-	footer .fl-2{width: 16.66666667%;}
-	footer .fl-3{width: 16.66666667%;}
-	footer .fl-4{
-		width: 25%; 
-		display: block;
-	}
-	footer .fl-5{width: 100%;}
-	footer .fl-6{width: 100%;}
 	.banner{height: 700px;}
 	.banner-2{height: 620px;}
 	.ban-l,.ban-r{
 		width: 420px;
 		height: 350px;
 	}
-	.aside,.bside{width: 50%;}
+	.wrap-pd{
+		width: 400px;
+		height: 400px;
+	}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 625px) rotate(-10deg);}
 		100%{transform: translate(-20%, 625px) rotate(10deg);}
@@ -363,14 +280,18 @@ footer{
 	position: relative;
 	transform: rotate(180deg);
 }
-.aside,.bside{min-width: 320px;}
+.aside, .bside, .cside{min-width: 320px;}
+.aside{width: 25%;}
+.bside{width: 50%;}
+.cside{width: 75%;}
+/*
 .aside-info p{
 	z-index: 1;
 	position: relative;
 	transform: translate(50px, 25px);
 }
 .aside-info img{transform: translateX(-25px);}
-.wrap-line{min-width: 200px;}
+*/
 .bg-1{
 	background-size: cover;
 	background-position: center;
@@ -433,8 +354,9 @@ footer{
 	width: 100%;
 }
 .wrap-pd{
-	width: 320px;
-	height: 320px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .wrap-pd:nth-child(1){background-image: url("../img/S-1.png");}
 .wrap-pd:nth-child(2){background-image: url("../img/S-2.png");}
@@ -450,8 +372,8 @@ footer{
 .wrap-pd-2:hover{opacity: 0.75;}
 .scale-pd{
 	color: #fff;
-	width: 550px;
-	height: 250px;
+	min-height: 200px;
+	min-width: 320px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -462,6 +384,12 @@ footer{
 .scale-pd:nth-child(4){background-image: url("../img/M-4.png");}
 .scale-pd:nth-child(5){background-image: url("../img/M-5.png");}
 .scale-pd:nth-child(6){background-image: url("../img/M-6.png");}
+.scale-pd:nth-child(7){background-image: url("../img/M-1.png");}
+.scale-pd:nth-child(8){background-image: url("../img/M-2.png");}
+.scale-pd:nth-child(9){background-image: url("../img/M-3.png");}
+.scale-pd:nth-child(10){background-image: url("../img/M-4.png");}
+.scale-pd:nth-child(11){background-image: url("../img/M-5.png");}
+.scale-pd:nth-child(12){background-image: url("../img/M-6.png");}
 .scale-pd-2{
 	height: 100%;
 	transition: 1s;
@@ -470,7 +398,7 @@ footer{
 .scale-pd:hover .scale-pd-2{
 	opacity: 0;
 	border-radius: 10%;
-	transform: translateX(-135%)scale(0.5);
+	transform: translateX(-100%)scale(0.5);
 }
 .end-page{transform: translateY(10%);}
 .database button{
@@ -483,4 +411,3 @@ footer{
 }
 .database-2 button{font-family: "Abril Fatface";}
 .collapse ul{list-style-type:none;}
-.transform{transform: scale(2);}
