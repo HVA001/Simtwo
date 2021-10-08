@@ -49,6 +49,8 @@ footer{
 		width: 320px;
 		height: 320px;
 	}
+	.thumbSwiper{height: 50px;}
+	.thumbSwiper2{height: 50vw;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 205px) rotate(-10deg);}
 		100%{transform: translate(-20%, 205px) rotate(10deg);}
@@ -69,6 +71,8 @@ footer{
 		width: 700px;
 		height: 300px;
 	}
+	.thumbSwiper{height: 100px;}
+	.thumbSwiper2{height: 400px;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 275px) rotate(-10deg);}
 		100%{transform: translate(-20%, 275px) rotate(10deg);}
@@ -121,6 +125,8 @@ footer{
 		width: 240px;
 		height: 200px;
 	}
+	.thumbSwiper{height: 100px;}
+	.thumbSwiper2{height: 600px;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 420px) rotate(-10deg);}
 		100%{transform: translate(-20%, 420px) rotate(10deg);}
@@ -153,6 +159,8 @@ footer{
 		width: 330px;
 		height: 280px;
 	}
+	.thumbSwiper{height: 200px;}
+	.thumbSwiper2{height: 900px;}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 525px) rotate(-10deg);}
 		100%{transform: translate(-20%, 525px) rotate(10deg);}
@@ -350,8 +358,8 @@ footer{
 }
 .grid-pd-2 a{text-decoration: none;}
 .grid-pd-2 img{
-	max-height: 100%;
 	width: 100%;
+	max-height: 100%;
 }
 .wrap-pd{
 	background-size: cover;
@@ -364,16 +372,16 @@ footer{
 .wrap-pd:nth-child(4){background-image: url("../img/S-4.png");}
 .wrap-pd:nth-child(5){background-image: url("../img/S-5.png");}
 .wrap-pd-2{
-	height: 100%;
-	background: #E1E1E1;
 	opacity: 0;
+	height: 100%;
 	transition: 1s;
+	background: #E1E1E1;
 }
 .wrap-pd-2:hover{opacity: 0.75;}
 .scale-pd{
 	color: #fff;
-	min-height: 200px;
 	min-width: 320px;
+	min-height: 200px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -411,3 +419,42 @@ footer{
 }
 .database-2 button{font-family: "Abril Fatface";}
 .collapse ul{list-style-type:none;}
+.swiper{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-slide{
+	display: flex;
+	font-size: 18px;
+	text-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	background-size: cover;
+	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	background-position: center;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+.thumbSwiper{
+	margin: 10px;
+	box-sizing: border-box;
+}
+.thumbSwiper .swiper-slide{
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+.thumbSwiper .swiper-slide-thumb-active{opacity: 1;}

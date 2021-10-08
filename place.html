@@ -7,6 +7,7 @@
 <!-- InstanceEndEditable -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
@@ -16,7 +17,7 @@
 	<header class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light shadow-lg">
 			<div class="container mx-auto align-items-center d-flex justify-content-between">
-				<a class="navbar-brand pb-3" href="#"><img src="img/Logo.png"></a>
+				<a class="navbar-brand pb-3 ms-5" href="#"><img src="img/Logo.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="container navbar-nav align-items-center d-flex justify-content-end">
@@ -53,9 +54,9 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active d-flex justify-content-center align-items-center">
-						<div class="cside position-absolute text-white">
-							<p class="font-6"><b>LADY NIGHT</b></p>
-							<h4 class="bside">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </h4>
+						<div class="cside position-absolute text-white px-2">
+							<p class="font-5"><b>LADY NIGHT</b></p>
+							<h6 class="bside">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever </h6>
 						</div>
 						<img src="img/Bann-12.png" class="d-block w-100" alt="...">
 					</div>
@@ -78,15 +79,26 @@
 			<div class="content-bg-4 py-5 w-100 text-center">
 				<p class="content font-6 py-5"><b>GALARRY</b></p>
 			</div>
-			<div class="d-flex flex-wrap">
-				<img class="w-100" src="img/Bann-14.png">
-				<img class="aside p-5" src="img/Bann-14.png">
-				<img class="aside p-5" src="img/Bann-14.png">
-				<img class="aside p-5" src="img/Bann-14.png">
-				<img class="aside p-5" src="img/Bann-14.png">
+			<div class="swiper thumbSwiper2">
+				<div class="swiper-wrapper">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<div class="swiper thumbSwiper">
+				<div class="swiper-wrapper">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+					<img class="swiper-slide" src="img/Bann-14.png">
+				</div>
 			</div>
 			<div class="text-center pb-5">
-				<div class="content-bg-2 transup py-5 w-100 text-center">
+				<div class="content-bg-2 py-5 w-100 text-center">
 					<p class="content font-6 py-5"><b>CLASSIC COCKTAIL</b></p>
 				</div>
 				<div class="d-flex flex-wrap justify-content-around">
@@ -233,6 +245,26 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+		var swiper = new Swiper(".thumbSwiper", {
+			loop: true,
+			freeMode: true,
+			spaceBetween: 10,
+			slidesPerView: 4,
+			watchSlidesProgress: true,
+		});
+		var swiper2 = new Swiper(".thumbSwiper2", {
+			loop: true,
+			spaceBetween: 10,
+			thumbs: {swiper: swiper,},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+    </script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
@@ -246,6 +278,5 @@
 			btr.style.left = value/4 + 'px';
 		})
 	</script> 
-	<script src="js/bootstrap.min.js"></script>
 </body>
 <!-- InstanceEnd --></html>

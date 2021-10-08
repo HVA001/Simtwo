@@ -7,6 +7,7 @@
 <!-- TemplateEndEditable -->
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- TemplateBeginEditable name="head" -->
 	<!-- TemplateEndEditable -->
@@ -78,6 +79,26 @@
 			</div>
 		</div>
 	</footer>
+	<script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+		var swiper = new Swiper(".thumbSwiper", {
+			loop: true,
+			freeMode: true,
+			spaceBetween: 10,
+			slidesPerView: 4,
+			watchSlidesProgress: true,
+		});
+		var swiper2 = new Swiper(".thumbSwiper2", {
+			loop: true,
+			spaceBetween: 10,
+			thumbs: {swiper: swiper,},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+    </script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
@@ -91,6 +112,5 @@
 			btr.style.left = value/4 + 'px';
 		})
 	</script> 
-	<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
