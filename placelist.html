@@ -17,7 +17,7 @@
 	<header class="fixed-top">
 		<nav class="navbar navbar-expand-lg navbar-light shadow-lg">
 			<div class="container mx-auto align-items-center d-flex justify-content-between">
-				<a class="navbar-brand pb-3 ms-5" href="#"><img src="img/Logo.png"></a>
+				<a class="navbar-brand pb-3" href="#"><img src="img/Logo.png"></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="container navbar-nav align-items-center d-flex justify-content-end">
@@ -31,7 +31,7 @@
 								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>WHISKY</b></a></li>
 								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>GIN</b></a></li>
 								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>RUM</b></a></li>
-								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>TEQUILA& MEZCAL</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>TEQUILA & MEZCAL</b></a></li>
 							</ul>
 						</div>
 						<li class="nav-item mx-3"><a class="font-3 nav-link" href="placelist.html"><b>Bar</b></a></li>
@@ -42,116 +42,121 @@
 		</nav>
 	</header>
 	<!-- InstanceBeginEditable name="main" -->	
-		<div class="container text-center">
-			<div class="bg-primary pt-5 mt-5">
-				<div class="bg-4 d-flex flex-column align-items-center py-5">
-					<div class="hidden w-25 bg-white border-secondary border-4 border-start-0 border-end-0 border-top border-bottom py-2"><input class="border-0" type="text" placeholder="Search for cocktail...">&emsp;<i class="fa fa-angle-down fa-lg"></i></div>
-					<p class="database pt-5">
-						<button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 m-3" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>LOUNGE BAR&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button>
-						<button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 m-3" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>COCKTAIL BAR&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button>
-					</p>
-					<div class="collapse" id="occasions">
-						<ul class="d-flex py-5">
-							<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Whisky</li>
-							<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Gin</li>
-							<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Rum</li>
-							<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Brandy</li>
-							<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Tequila</li>
-						</ul>
-					</div>
-					<div class="database-2">
-						<button class="font-3 text-white bg-secondary px-5 py-2 mx-3 my-3">SEARCH</button>
-						<button class="font-3 text-secondary border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 mx-3"><b>CLEAR SEARCH</b></button>
-					</div>
+		<div class="container-fluid text-center pt-5 mt-5">
+			<div class="bg-primary">
+				<div class="bg-4">
+					<div class="container d-flex flex-column align-items-center py-5">
+						<div class="hidden w-25 bg-white border-secondary border-4 border-start-0 border-end-0 border-top border-bottom py-2"><input class="border-0" type="text" placeholder="Search for cocktail...">&emsp;<i class="fa fa-angle-down fa-lg"></i></div>
+						<div class="database d-flex flex-wrap justify-content-around px-5 mt-5">
+								<div><button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 mx-5" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>LOUNGE BAR&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button></div>
+								<div><button type="button" class="font-3 border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 mx-5" data-bs-toggle="collapse" data-bs-target="#occasions" aria-expanded="false" aria-controls="occasions"><b>COCKTAIL BAR&ensp;</b><i class="fa fa-angle-down fa-lg"></i></button></div>
+
+							</div>
+						<div class="collapse" id="occasions">
+							<ul class="d-flex py-5">
+								<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Whisky</li>
+								<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Gin</li>
+								<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Rum</li>
+								<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Brandy</li>
+								<li class="font-4 mx-4"><input type="checkbox" class="form-check-input">&ensp;Tequila</li>
+							</ul>	
+						</div>
+						<div class="database-2 mt-5">
+							<button class="font-3 text-white bg-secondary px-5 py-2 mx-3 my-3">SEARCH</button>
+							<button class="font-3 text-secondary border-secondary border-4 border-start-0 border-end-0 border-top border-bottom px-4 py-2 mx-3"><b>CLEAR SEARCH</b></button>
+						</div>
 					<img class="w-100" src="img/Bann-13.png">
+					</div>
 				</div>
 			</div>
 			<div class="bg-1">
 				<div class="content-bg-4 py-5 w-100 text-center">
 					<p class="content font-6 py-5"><b>PLACE FOR ENJOY</b></p>
 				</div>
-				<div class="d-flex flex-wrap justify-content-around text-center pt-5">
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
-					<a href="place.html" class="scale-pd mb-5">
-						<div class="scale-pd-2 col-6 px-4 py-3 float-end text-start">
-							<p class="font-5"><b>The Alley</b></p>
-							<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h6>
-						</div>
-					</a>
+				<div class="container">
+					<div class="d-flex flex-wrap justify-content-around text-center pt-5">
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+						<a href="place.html" class="scale-pd mb-5">
+							<div class="scale-pd-2 bside px-4 py-3 float-end text-start">
+								<p class="font-5"><b>The Alley</b></p>
+								<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h5>
+							</div>
+						</a>
+					</div>
+					<div>
+						<button class="bg-dark text-white p-3 mx-2"><b>1</b></button>
+						<button class="bg-dark text-white p-3 mx-2"><b>2</b></button>
+						<button class="bg-dark text-white p-3 mx-2"><b>3</b></button>
+						<button class="bg-dark text-white p-3 mx-2"><b>4</b></button>
+						<button class="bg-dark text-white p-3 mx-2"><b>5</b></button>
+					</div>
+					<img class="end-page bside mx-auto" src="img/B-8.png">
 				</div>
-				<div>
-					<button class="bg-dark text-white p-3 mx-2"><b>1</b></button>
-					<button class="bg-dark text-white p-3 mx-2"><b>2</b></button>
-					<button class="bg-dark text-white p-3 mx-2"><b>3</b></button>
-					<button class="bg-dark text-white p-3 mx-2"><b>4</b></button>
-					<button class="bg-dark text-white p-3 mx-2"><b>5</b></button>
-				</div>
-				<img class="end-page bside mx-auto" src="img/B-8.png">
 			</div>
 		</div>
 	<!-- InstanceEndEditable -->
@@ -196,13 +201,13 @@
 		var swiper = new Swiper(".thumbSwiper", {
 			loop: true,
 			freeMode: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			slidesPerView: 4,
 			watchSlidesProgress: true,
 		});
 		var swiper2 = new Swiper(".thumbSwiper2", {
 			loop: true,
-			spaceBetween: 10,
+			spaceBetween: 50,
 			thumbs: {swiper: swiper,},
 			navigation: {
 				nextEl: ".swiper-button-next",

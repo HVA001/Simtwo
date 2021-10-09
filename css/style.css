@@ -45,9 +45,17 @@ footer{
 		height: 70px;
 	}
 	.aside, .bside, .cside{width: 100%;}
+	.grid-pd{
+		width: 300px;
+		height: 450px;
+	}
 	.wrap-pd{
 		width: 320px;
 		height: 320px;
+	}
+	.scale-pd{
+		width: 320px;
+		height: 200px;
 	}
 	.thumbSwiper{height: 50px;}
 	.thumbSwiper2{height: 50vw;}
@@ -68,8 +76,8 @@ footer{
 		height: 115px;
 	}
 	.scale-pd{
-		width: 700px;
-		height: 300px;
+		width: 500px;
+		height: 250px;
 	}
 	.thumbSwiper{height: 100px;}
 	.thumbSwiper2{height: 400px;}
@@ -177,6 +185,14 @@ footer{
 		width: 350px;
 		height: 290px;
 	}
+	.grid-pd{
+		width: 400px;
+		height: 600px;
+	}
+	.wrap-pd{
+		width: 400px;
+		height: 400px;
+	}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 575px) rotate(-10deg);}
 		100%{transform: translate(-20%, 575px) rotate(10deg);}
@@ -194,8 +210,12 @@ footer{
 		height: 350px;
 	}
 	.wrap-pd{
-		width: 400px;
-		height: 400px;
+		width: 500px;
+		height: 500px;
+	}
+	.scale-pd{
+		width: 900px;
+		height: 350px;
 	}
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 625px) rotate(-10deg);}
@@ -207,7 +227,10 @@ footer{
 	}
 }
 .hidden{overflow: hidden;}
-.ban-l,.ban-r{position: relative;}
+.ban-l,.ban-r{
+	z-index: 1;
+	position: absolute;
+}
 .ban-l{
 	left: 0;
 	animation: lim-up 2s linear infinite alternate;
@@ -251,7 +274,7 @@ footer{
 .fw{
 	left: 0vw;
 	position: absolute;
-	transform: translateY(-85%);
+	transform: translateY(-75%);
 }
 .transup{transform: translateY(-50px);}
 .content-bg-1{
@@ -292,14 +315,12 @@ footer{
 .aside{width: 25%;}
 .bside{width: 50%;}
 .cside{width: 75%;}
-/*
 .aside-info p{
 	z-index: 1;
-	position: relative;
-	transform: translate(50px, 25px);
+	position: absolute;
+	transform: translate(-100px, 75px);
 }
-.aside-info img{transform: translateX(-25px);}
-*/
+/*.aside-info img{transform: translateX(-25px);}*/
 .bg-1{
 	background-size: cover;
 	background-position: center;
@@ -334,32 +355,27 @@ footer{
 	background-image: url("../img/S-8.png");
 }
 .grid-pd{
-	width: 300px;
-	height: 500px;
-	min-width: 200px;
 	overflow: hidden;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("../img/B-1.png");
 }
-.grid-pd p{
-	text-align: center;
+.grid-pd h6{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url("../img/B-12.png")}
 .grid-pd-2{
-	width: 225px;
-	height: 375px;
+	width: 95%;
+	height: 80%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url("../img/B-2.png");
 }
-.grid-pd-2 a{text-decoration: none;}
 .grid-pd-2 img{
-	width: 100%;
-	max-height: 100%;
+	max-width: 90%;
+	max-height: 90%;
 }
 .wrap-pd{
 	background-size: cover;
@@ -380,8 +396,6 @@ footer{
 .wrap-pd-2:hover{opacity: 0.75;}
 .scale-pd{
 	color: #fff;
-	min-width: 320px;
-	min-height: 200px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
