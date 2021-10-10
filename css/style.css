@@ -46,8 +46,8 @@ footer{
 	}
 	.aside, .bside, .cside{width: 100%;}
 	.grid-pd{
-		width: 300px;
-		height: 450px;
+		width: 225px;
+		height: 350px;
 	}
 	.wrap-pd{
 		width: 320px;
@@ -167,6 +167,10 @@ footer{
 		width: 330px;
 		height: 280px;
 	}
+	.scale-pd{
+		width: 600px;
+		height: 250px;
+	}
 	.thumbSwiper{height: 200px;}
 	.thumbSwiper2{height: 900px;}
 	@keyframes lim-up{
@@ -185,14 +189,12 @@ footer{
 		width: 350px;
 		height: 290px;
 	}
+/*
 	.grid-pd{
 		width: 400px;
 		height: 600px;
 	}
-	.wrap-pd{
-		width: 400px;
-		height: 400px;
-	}
+*/
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 575px) rotate(-10deg);}
 		100%{transform: translate(-20%, 575px) rotate(10deg);}
@@ -209,14 +211,12 @@ footer{
 		width: 420px;
 		height: 350px;
 	}
+/*
 	.wrap-pd{
 		width: 500px;
 		height: 500px;
 	}
-	.scale-pd{
-		width: 900px;
-		height: 350px;
-	}
+*/
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 625px) rotate(-10deg);}
 		100%{transform: translate(-20%, 625px) rotate(10deg);}
