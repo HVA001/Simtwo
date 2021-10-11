@@ -4,6 +4,7 @@
 ::-webkit-scrollbar{display: none;}
 a,p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
+html{box-sizing: border-box;}
 nav{
 	background-size: contain;
 	background-position: center;
@@ -343,11 +344,7 @@ footer{
 	background-position: top left, top right, bottom right,bottom left;
 	background-image: url("../img/B-9.png"), url("../img/B-9-2.png"), url("../img/B-9-3.png"), url("../img/B-9-4.png");
 }
-.bg-4 input::placeholder{
-	color: #683B31;
-	font-size: 18px;
-	font-style: "Abril Fatface";
-}
+.bg-4 input::placeholder{color: #683B31;}
 .bg-5{
 	background-size: cover;
 	background-position: center;
@@ -481,3 +478,4 @@ footer{
 	background-repeat: no-repeat;
 	background-image: url("../img/D-1.png");
 }
+.text-forminput::placeholder{color: #683B31;}

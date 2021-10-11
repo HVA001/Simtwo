@@ -35,7 +35,7 @@
 							</ul>
 						</div>
 						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="../placelist.html"><b>Bar</b></a></li>
-						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="../aboutus.html"><b>Contact us</b></a></li>
+						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="../contactus.html"><b>Contact us</b></a></li>
 					</ul>
 				</div>
 			</div>
@@ -106,10 +106,10 @@
 		let btr = document.getElementById("ban-btr");
 		window.addEventListener("scroll",function(){
 			let value = window.scrollY;
-			main.style.top = value*2.5 + 'px';
+			main.style.top = value*3 + 'px';
 			content.style.top= value*0.25 + 'px';
-			btl.style.right = value/4 + 'px';
-			btr.style.left = value/4 + 'px';
+			btl.style.right = value/3 + 'px';
+			btr.style.left = value/3 + 'px';
 		})
 	</script> 
 </body>
