@@ -24,8 +24,8 @@
 						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="../index.html"><b>Home</b></a></li>
 						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="../cocktail.html"><b>Cocktails</b></a></li>
 						<div class="dropdown text-center mx-3 ps-4">
-							<li class="nav-item"><a class="font-3 nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-							<b>Spirits</b></a></li>
+							<a class="font-3 dropdown-toggle text-info" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<b>Spirits</b></a>
 							<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
 								<li><a class="font-2 dropdown-item  py-1" href="../spirit.html"><b>BRANDY</b></a></li>
 								<li><a class="font-2 dropdown-item py-1" href="../spirit.html"><b>WHISKY</b></a></li>
