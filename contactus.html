@@ -24,8 +24,8 @@
 						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="index.html"><b>Home</b></a></li>
 						<li class="nav-item mx-3 ps-4"><a class="font-3 nav-link" href="cocktail.html"><b>Cocktails</b></a></li>
 						<div class="dropdown text-center mx-3 ps-4">
-							<a class="font-3 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-							<b>Spirits</b></a>
+							<li class="nav-item"><a class="font-3 nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<b>Spirits</b></a></li>
 							<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
 								<li><a class="font-2 dropdown-item  py-1" href="spirit.html"><b>BRANDY</b></a></li>
 								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>WHISKY</b></a></li>
@@ -44,7 +44,7 @@
 	<!-- InstanceBeginEditable name="main" -->	
 		<div class="bg-1 container-fluid pt-5 mt-5">
 			<div class="content-bg-4 w-100 py-5">
-				<p class="content font-6 py-5"><b>CONTACT US</b></p>
+				<p class="content font-5 py-5"><b>CONTACT US</b></p>
 			</div>
 			<div class="container d-flex flex-column align-items-center">
 				<h4 class="cside text-center text-info pb-4 mx-auto"><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen .</b></h4>
@@ -148,11 +148,11 @@
 		let btr = document.getElementById("ban-btr");
 		window.addEventListener("scroll",function(){
 			let value = window.scrollY;
-			main.style.top = value*3 + 'px';
+			main.style.top = value*2 + 'px';
 			content.style.top= value*0.25 + 'px';
-			btl.style.right = value/3 + 'px';
-			btr.style.left = value/3 + 'px';
+			btl.style.right = value/2.5 + 'px';
+			btr.style.left = value/2.5 + 'px';
 		})
-	</script> 
+	</script>
 </body>
 <!-- InstanceEnd --></html>

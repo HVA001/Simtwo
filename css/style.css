@@ -40,12 +40,12 @@ footer{
 	.font-5{font-size: 24px;}
 	.font-6{font-size: 28px;}
 	.banner{height: 200px;}
-	.banner-2{height: 110px;}
 	.ban-l,.ban-r{
 		width: 85px;
 		height: 70px;
 	}
 	.aside, .bside, .cside{width: 100%;}
+	.dside{width: 75%;}
 	.grid-pd{
 		width: 225px;
 		height: 350px;
@@ -71,7 +71,6 @@ footer{
 }
 @media (min-width: 576px){
 	.banner{height: 295px;}
-	.banner-2{height: 180px;}
 	.ban-l,.ban-r{
 		width: 135px;
 		height: 115px;
@@ -93,7 +92,6 @@ footer{
 }
 @media (min-width: 768px){
 	.banner{height: 375px;}
-	.banner-2{height: 245px;}
 	.ban-l,.ban-r{
 		width: 180px;
 		height: 150px;
@@ -129,7 +127,6 @@ footer{
 	.font-5{font-size: 36px;}
 	.font-6{font-size: 42px;}
 	.banner{height: 490px;}
-	.banner-2{height: 320px;}
 	.ban-l,.ban-r{
 		width: 240px;
 		height: 200px;
@@ -147,7 +144,6 @@ footer{
 }
 @media (min-width: 1200px){
 	.banner{height: 570px;}
-	.banner-2{height: 390px;}
 	.ban-l,.ban-r{
 		width: 285px;
 		height: 240px;
@@ -163,7 +159,6 @@ footer{
 }
 @media (min-width: 1400px){
 	.banner{height: 650px;}
-	.banner-2{height: 450px;}
 	.ban-l,.ban-r{
 		width: 330px;
 		height: 280px;
@@ -185,7 +180,6 @@ footer{
 }
 @media (min-width: 1600px){
 	.banner{height: 675px;}
-	.banner-2{height: 520px;}
 	.ban-l,.ban-r{
 		width: 350px;
 		height: 290px;
@@ -207,7 +201,6 @@ footer{
 }
 @media (min-width: 1900px){
 	.banner{height: 700px;}
-	.banner-2{height: 620px;}
 	.ban-l,.ban-r{
 		width: 420px;
 		height: 350px;
@@ -252,20 +245,19 @@ footer{
 }
 .ban-bt{
 	width: 100%;
-	position: relative;
 }
 .ban-btl{
 	z-index: 1;
 	position: relative;
-	transform: translate(25%, -75%);
+	transform: translate(-50%, -90%) scale(1.5);
 }
 .ban-btr{
 	z-index: 1;
 	position: relative;
-	transform: translate(-25%, -75%);
+	transform: translate(50%, -90%) scale(1.5);
 }
 .content{
-	z-index: 2;
+	z-index: 0;
 	text-align: center;
 	background-size: contain;
 	background-position: center;
@@ -316,6 +308,7 @@ footer{
 .aside{width: 25%;}
 .bside{width: 50%;}
 .cside{width: 75%;}
+.dside{width: 50%;}
 .aside-info p{
 	z-index: 1;
 	position: absolute;
@@ -353,8 +346,7 @@ footer{
 }
 .grid-pd{
 	overflow: hidden;
-	background-size: contain;
-	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-image: url("../img/B-1.png");
 }
