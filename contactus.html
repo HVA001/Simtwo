@@ -7,7 +7,6 @@
 <!-- InstanceEndEditable -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
@@ -122,25 +121,27 @@
 		</div>
 	</footer>
 	<script src="js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-		var swiper = new Swiper(".thumbSwiper", {
-			loop: true,
-			freeMode: true,
-			spaceBetween: 50,
-			slidesPerView: 4,
-			watchSlidesProgress: true,
-		});
-		var swiper2 = new Swiper(".thumbSwiper2", {
-			loop: true,
-			spaceBetween: 50,
-			thumbs: {swiper: swiper,},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-    </script>
+	<script>
+		function openModal(){document.getElementById("myModal").style.display = "block";}
+		function closeModal(){document.getElementById("myModal").style.display = "none";}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n){showSlides(slideIndex += n);}
+		function currentSlide(n){showSlides(slideIndex = n);}
+		function showSlides(n){
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++){slides[i].style.display = "none";}
+			for (i = 0; i < dots.length; i++){dots[i].className = dots[i].className.replace(" active", "");}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+	</script>
 	<script>
 		let main = document.getElementById("ban-main");
 		let content= document.getElementById("ban-content");
