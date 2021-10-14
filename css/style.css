@@ -244,6 +244,7 @@ footer{
 	transform: translate(0, -175%);
 }
 .ban-bt{
+	z-index: 1;
 	width: 100%;
 }
 .ban-btl{
