@@ -5,7 +5,7 @@
 a,p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html{box-sizing: border-box;}
-nav{
+header{
 	background-size: contain;
 	background-position: center;
 	background-image: url("../img/H-1.png");
@@ -85,10 +85,6 @@ footer{
 		0%{transform: translate(-20%, 275px) rotate(-10deg);}
 		100%{transform: translate(-20%, 275px) rotate(10deg);}
 	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 150px) rotate(-10deg);}
-		100%{transform: translate(15%, 150px) rotate(10deg);}
-	}
 }
 @media (min-width: 768px){
 	.banner{height: 375px;}
@@ -99,10 +95,6 @@ footer{
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 335px) rotate(-10deg);}
 		100%{transform: translate(-20%, 335px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
 }
 @media (min-width: 992px){
@@ -137,10 +129,6 @@ footer{
 		0%{transform: translate(-20%, 420px) rotate(-10deg);}
 		100%{transform: translate(-20%, 420px) rotate(10deg);}
 	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
 }
 @media (min-width: 1200px){
 	.banner{height: 570px;}
@@ -151,10 +139,6 @@ footer{
 	@keyframes lim-up{
 		0%{transform: translate(-20%, 470px) rotate(-10deg);}
 		100%{transform: translate(-20%, 470px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
 	}
 }
 @media (min-width: 1400px){
@@ -173,10 +157,6 @@ footer{
 		0%{transform: translate(-20%, 525px) rotate(-10deg);}
 		100%{transform: translate(-20%, 525px) rotate(10deg);}
 	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
 }
 @media (min-width: 1600px){
 	.banner{height: 675px;}
@@ -194,10 +174,6 @@ footer{
 		0%{transform: translate(-20%, 575px) rotate(-10deg);}
 		100%{transform: translate(-20%, 575px) rotate(10deg);}
 	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
-	}
 }
 @media (min-width: 1900px){
 	.banner{height: 700px;}
@@ -212,25 +188,19 @@ footer{
 	}
 */
 	@keyframes lim-up{
-		0%{transform: translate(-20%, 625px) rotate(-10deg);}
-		100%{transform: translate(-20%, 625px) rotate(10deg);}
-	}
-	@keyframes lim-down{
-		0%{transform: translate(15%, 50px) rotate(-10deg);}
-		100%{transform: translate(15%, 50px) rotate(10deg);}
+		0%{transform: translate(0, 625px) rotate(-10deg);}
+		100%{transform: translate(0, 625px) rotate(10deg);}
 	}
 }
 .hidden{overflow: hidden;}
 .ban-l,.ban-r{
 	z-index: 1;
-	position: absolute;
+	position: relative;
 }
 .ban-l{
-	left: 0;
 	animation: lim-up 2s linear infinite alternate;
 }
 .ban-r{
-	right: 0;
 	animation: lim-down 2s linear infinite alternate;
 }
 .ban-main{
@@ -250,12 +220,14 @@ footer{
 .ban-btl{
 	z-index: 1;
 	position: relative;
-	transform: translate(-50%, -90%) scale(1.5);
+	transform: scale(0.75);
+/*	transform: translate(-50%, -90%) scale(1.5);*/
 }
 .ban-btr{
 	z-index: 1;
 	position: relative;
-	transform: translate(50%, -90%) scale(1.5);
+	transform: scale(0.75);
+/*	transform: translate(50%, -90%) scale(1.5);*/
 }
 .content{
 	z-index: 0;
