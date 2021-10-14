@@ -6,7 +6,6 @@ a,p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html{box-sizing: border-box;}
 nav{
-	z-index: 1030;
 	background-size: contain;
 	background-position: center;
 	background-image: url("../img/H-1.png");
