@@ -14,40 +14,38 @@
 
 <body>
 	<header class="fixed-top shadow-lg">
-		<div class="container"> 
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container d-flex justify-content-between align-items-center mx-auto">
-					<a class="navbar-brand pb-3" href="#"><img src="img/Logo.png"></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="container navbar-nav align-items-center d-flex justify-content-end">
-							<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="index.html"><b>Home</b></a></li>
-							<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="cocktail.html"><b>Cocktails</b></a></li>
-							<div class="dropdown text-center ps-4 mx-3 my-3">
-								<a class="font-3 dropdown-toggle text-info" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-								<b>Spirits</b></a>
-								<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
-									<li><a class="font-2 dropdown-item  py-1" href="spirit.html"><b>BRANDY</b></a></li>
-									<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>WHISKY</b></a></li>
-									<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>GIN</b></a></li>
-									<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>RUM</b></a></li>
-									<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>TEQUILA & MEZCAL</b></a></li>
-								</ul>
-							</div>
-							<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="placelist.html"><b>Bar</b></a></li>
-							<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="contactus.html"><b>Contact us</b></a></li>
-						</ul>
-					</div>
+		<nav class="container navbar navbar-expand-lg navbar-light h-100">
+			<div class="container d-flex justify-content-between align-items-center mx-auto">
+				<a class="navbar-brand pb-3" href="#"><img src="img/Logo.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="container navbar-nav d-flex align-items-center justify-content-end">
+						<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="index.html"><b>Home</b></a></li>
+						<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="cocktail.html"><b>Cocktails</b></a></li>
+						<div class="dropdown text-center ps-4 mx-3 my-3">
+							<a class="font-3 dropdown-toggle text-info" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<b>Spirits</b></a>
+							<ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+								<li><a class="font-2 dropdown-item  py-1" href="spirit.html"><b>BRANDY</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>WHISKY</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>GIN</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>RUM</b></a></li>
+								<li><a class="font-2 dropdown-item py-1" href="spirit.html"><b>TEQUILA & MEZCAL</b></a></li>
+							</ul>
+						</div>
+						<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="placelist.html"><b>Bar</b></a></li>
+						<li class="nav-item ps-4 mx-3"><a class="font-3 nav-link" href="contactus.html"><b>Contact us</b></a></li>
+					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 	</header>
 	<!-- InstanceBeginEditable name="main" -->
 		<div class="bg-1 container-fluid text-center pt-5">
 			<div class="content-bg-4 w-100 text-center py-5 mt-5">
 				<p class="content font-5 py-5"><b>THE ALLEY</b></p>
 			</div>
-			<div class="container py-5 text-start">
+			<div class="container py-5 text-center">
 				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,8 +84,8 @@
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
+				<img class="cside mx-auto my-5" src="img/H-2.png">
 			</div>
-			<img class="cside mx-auto mt-5 mb-5" src="img/H-2.png">
 			<div class="content-bg-4 py-5 w-100 text-center">
 				<p class="content font-5 py-5"><b>GALARRY</b></p>
 			</div>
@@ -104,40 +102,41 @@
 				<div id="myModal" class="modal">
 					<span class="close cursor" onclick="closeModal()">&times;</span>
 					<div class="modal-content">
-					<div class="mySlides">
-						<div class="numbertext">1 / 5</div>
-						<img src="img/Bann-14.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">2 / 5</div>
-						<img src="img/Bann-17.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">3 / 5</div>
-						<img src="img/Bann-18.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">4 / 5</div>
-						<img src="img/Bann-19.png" style="width:100%">
-					</div>
-					<div class="mySlides">
-						<div class="numbertext">5 / 5</div>
-						<img src="img/Bann-20.png" style="width:100%">
-					</div>
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-					<div class="caption-container">
-						<p id="caption"></p>
-					</div>
-					<div class="d-flex">
-						<div class="column"><img class="hover-shadow w-100" src="img/Bann-14.png" onclick="currentSlide(1)"></div>
-						<div class="column"><img class="hover-shadow w-100" src="img/Bann-17.png" onclick="currentSlide(2)"></div>
-						<div class="column"><img class="hover-shadow w-100" src="img/Bann-18.png" onclick="currentSlide(3)"></div>
-						<div class="column"><img class="hover-shadow w-100" src="img/Bann-19.png" onclick="currentSlide(4)"></div>
-						<div class="column"><img class="hover-shadow w-100" src="img/Bann-20.png" onclick="currentSlide(5)"></div>
-					</div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 5</div>
+							<img src="img/Bann-14.png" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 5</div>
+							<img src="img/Bann-17.png" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 5</div>
+							<img src="img/Bann-18.png" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">4 / 5</div>
+							<img src="img/Bann-19.png" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">5 / 5</div>
+							<img src="img/Bann-20.png" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+						<div class="d-flex">
+							<div class="column"><img class="hover-shadow w-100" src="img/Bann-14.png" onclick="currentSlide(1)"></div>
+							<div class="column"><img class="hover-shadow w-100" src="img/Bann-17.png" onclick="currentSlide(2)"></div>
+							<div class="column"><img class="hover-shadow w-100" src="img/Bann-18.png" onclick="currentSlide(3)"></div>
+							<div class="column"><img class="hover-shadow w-100" src="img/Bann-19.png" onclick="currentSlide(4)"></div>
+							<div class="column"><img class="hover-shadow w-100" src="img/Bann-20.png" onclick="currentSlide(5)"></div>
+						</div>
 					</div>
 				</div>
+				<img class="cside mx-auto my-5" src="img/H-2.png">
 			</div>
 			<div class="content-bg-2 py-5 w-100 text-center">
 				<p class="content font-5 py-5"><b>CLASSIC COCKTAIL</b></p>
@@ -179,7 +178,9 @@
 						<h6 class="font-2 text-secondary py-2 mt-4"><b>NERONI</b></h6>
 					</a>
 				</div>
-				<div><img class="cside mx-auto mb-5" src="img/H-2.png"></div>
+				<div>
+					<img class="cside mx-auto my-5" src="img/H-2.png">
+				</div>
 			</div>
 			<div class="content-bg-2 py-5 w-100 text-center">
 				<p class="content font-5 py-5"><b>SIGNATURE COCKTAILS</b></p>
@@ -221,7 +222,9 @@
 						<h6 class="font-2 text-secondary py-2 mt-4"><b>NERONI</b></h6>
 					</a>
 				</div>
-				<div><img class="cside mx-auto mb-5" src="img/H-2.png"></div>
+				<div>
+					<img class="cside mx-auto my-5" src="img/H-2.png">
+				</div>
 				<img class="w-100" src="img/B-10.png">
 			</div>
 		</div>
