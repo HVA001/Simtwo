@@ -5,7 +5,15 @@
 a,p{font-family: "Abril Fatface";}
 h1,h2,h3,h4,h5,h6{font-family: "Cambria";}
 html{box-sizing: border-box;}
-header{
+/*
+header .collapse{
+	box-sizing: content-box;
+	background-size: cover;
+	background-position: center;
+	background-image: url("../img/H-4.png");
+}
+*/
+nav{
 	background-size: contain;
 	background-position: center;
 	background-image: url("../img/H-1.png");
@@ -17,6 +25,7 @@ footer{
 	background-image: url("../img/H-4.png");
 }
 @media (min-width: 375px){
+	header nav .navbar-brand img{height: 35px;}
 	footer .container{flex-wrap: wrap;}
 	footer .fl-1{
 		width: 100%;
@@ -33,12 +42,12 @@ footer{
 	}
 	footer .fl-5{width: 50%;}
 	footer .fl-6{width: 50%;}
-	.font-1{font-size: 13px;}
-	.font-2{font-size: 16px;}
-	.font-3{font-size: 18px;}
-	.font-4{font-size: 20px;}
-	.font-5{font-size: 24px;}
-	.font-6{font-size: 28px;}
+	.font-1{font-size: 10px;}
+	.font-2{font-size: 13px;}
+	.font-3{font-size: 16px;}
+	.font-4{font-size: 18px;}
+	.font-5{font-size: 20px;}
+	.font-6{font-size: 24px;}
 	.banner{height: 200px;}
 	.ban-l,.ban-r{
 		width: 85px;
@@ -71,6 +80,7 @@ footer{
 	}
 }
 @media (min-width: 576px){
+	header nav .navbar-brand img{height: 100%;}
 	.banner{height: 295px;}
 	.ban-l,.ban-r{
 		width: 135px;
