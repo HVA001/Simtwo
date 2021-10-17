@@ -94,10 +94,7 @@ footer{
 		width: 320px;
 		height: 320px;
 	}
-	.scale-pd{
-		width: 500px;
-		height: 250px;
-	}
+	
 	.thumbSwiper{height: 100px;}
 	.thumbSwiper2{height: 400px;}
 	@keyframes lim-up{
@@ -142,6 +139,10 @@ footer{
 	.ban-l,.ban-r{
 		width: 240px;
 		height: 200px;
+	}
+	.scale-pd{
+		width: 400px;
+		height: 250px;
 	}
 	.thumbSwiper{height: 100px;}
 	.thumbSwiper2{height: 600px;}
