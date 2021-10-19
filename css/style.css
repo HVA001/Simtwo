@@ -53,8 +53,10 @@ footer{
 		width: 85px;
 		height: 70px;
 	}
+/*
 	.aside, .bside, .cside{width: 100%;}
-	.dside{width: 75%;}
+	.dside{width: 90%;}
+*/
 	.grid-pd{
 		width: 225px;
 		height: 350px;
@@ -118,13 +120,13 @@ footer{
 	footer .container{flex-wrap: nowrap;}
 	footer .fl-1{
 		display: block;
-		width: 41.66666667%;
+		width: 40%;
 		padding-right: 3rem;
 	}
-	footer .fl-2{width: 16.66666667%;}
-	footer .fl-3{width: 16.66666667%;}
+	footer .fl-2{width: 20%;}
+	footer .fl-3{width: 20%;}
 	footer .fl-4{
-		width: 25%; 
+		width: 40%;
 		display: block;
 	}
 	footer .fl-5{width: 100%;}
@@ -218,12 +220,8 @@ footer{
 	z-index: 1;
 	position: relative;
 }
-.ban-l{
-	animation: lim-up 2s linear infinite alternate;
-}
-.ban-r{
-	animation: lim-down 2s linear infinite alternate;
-}
+.ban-l{animation: lim-up 2s linear infinite alternate;}
+.ban-r{animation: lim-down 2s linear infinite alternate;}
 .ban-main{
 	width: 85%;
 	position: relative;
@@ -302,7 +300,10 @@ footer{
 .aside{width: 25%;}
 .bside{width: 50%;}
 .cside{width: 75%;}
-.dside{width: 50%;}
+.dside{
+	width: 50%;
+	min-width: 200px;
+}
 .aside-info p{
 	z-index: 1;
 	position: absolute;
@@ -561,4 +562,8 @@ img.hover-shadow{transition: 0.3s;}
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label{color: #c59b08;}
-.database
+.shake{animation: shake 1.5s linear infinite alternate;}
+@keyframes shake{
+	0%{transform: rotate(-5deg);}
+	100%{transform: rotate(5deg);}
+}
