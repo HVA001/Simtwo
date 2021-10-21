@@ -40,8 +40,7 @@ footer{
 		display: flex;
 		flex-wrap: wrap;
 	}
-	footer .fl-5{width: 50%;}
-	footer .fl-6{width: 50%;}
+	footer .fl-5, .fl-6{width: 50%;}
 	.font-1{font-size: 10px;}
 	.font-2{font-size: 13px;}
 	.font-3{font-size: 16px;}
@@ -126,7 +125,7 @@ footer{
 	footer .fl-2{width: 20%;}
 	footer .fl-3{width: 20%;}
 	footer .fl-4{
-		width: 40%;
+		width: 20%;
 		display: block;
 	}
 	footer .fl-5{width: 100%;}
