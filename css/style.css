@@ -19,6 +19,7 @@ nav{
 	background-image: url("../img/H-1.png");
 }
 footer{
+	bottom: 0;
 	box-sizing: content-box;
 	background-size: cover;
 	background-position: center;
